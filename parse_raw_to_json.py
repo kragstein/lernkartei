@@ -1,10 +1,11 @@
+
 import io
 import json
 
 print("Parsing raw text to json")
 
-with io.open('101_to_200_words_raw.txt', mode="r", encoding="utf-8") as f:
-    word_count = 101
+with io.open('1_to_100_words_raw.txt', mode="r", encoding="utf-8") as f:
+    word_count = 1
     line_count = 0
 
     is_sentence = False
@@ -13,6 +14,11 @@ with io.open('101_to_200_words_raw.txt', mode="r", encoding="utf-8") as f:
 
     word_dict = {}
     word_list = []
+
+    word_types_list = ["art", "pron", "conj", "prep", "verb",
+                       "aux", "part", "adv", "adj", "interj",
+                       "der", "die", "das"]
+
 
     for line in f:
         line = line.strip()
@@ -43,17 +49,30 @@ with io.open('101_to_200_words_raw.txt', mode="r", encoding="utf-8") as f:
             continue
         # print(f"Line: {line}")
         if line.startswith(str(word_count)):
-            if line_count in range(2, 10):
+            if line_count in range(2, 11):
                 pass
             else:
                 # store the last word
                 if "word" in word_dict.keys():
                     word_list.append(word_dict)
                     word_dict = {}
-                # new word
                 numbered_def = 0
-                word, word_type, *trad_list = (line.split(" ") + [""] + [""])[1:]
-                trad = " ".join(trad_list).strip()
+                # new word
+                items = line.split(" ")
+                if len(items) == 2:
+                    # Only a number and a word
+                    word = items[1]
+                    word_type = ""
+                    trad = ""
+                elif (len(items) > 2) and (items[2] in word_types_list):
+                    word = items[1]
+                    word_type = items[2]
+                    trad = " ".join(items[3:])
+                # elif parens see #87 jede
+                else:
+                    word, word_type, *trad_list = (line.split(" ") + [""] + [""])[1:]
+                    trad = " ".join(trad_list).strip()
+
                 print(f"Word: {word}, type: {word_type}, trad: {trad}")
                 word_dict["word"] = word
                 word_dict["type"] = word_type
@@ -66,6 +85,7 @@ with io.open('101_to_200_words_raw.txt', mode="r", encoding="utf-8") as f:
             numbered_def = int(line[0])
             index, word_type, *trad_list = (line.split(" ") + [""] + [""])
             trad = " ".join(trad_list).strip()
+            # doesn't work at mich 65
             print(f"Sub-def: #{index} {word_type}, trad: {trad}")
 
             if numbered_def == 1:
