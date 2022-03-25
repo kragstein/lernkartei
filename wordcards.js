@@ -55,7 +55,7 @@ this.wordcards.game = function(retValue) {
         font-size: 25px;
         border-radius: 0px;
         border: none;
-        background-color: lightskyblue;
+        background-color: #D4E2EB;
         color: black;
       }
       p {
@@ -82,9 +82,12 @@ this.wordcards.game = function(retValue) {
         flex-grow: 1;
         overflow: auto;
         flex-direction: column;
+        background-color: #F2EECB;
+        margin: 20px 0;
+        border-radius: 20px;
       }
       #numbered {
-        width: 100%;
+        width: 95%;
       }
       .words {
         font-size: 30px;
@@ -98,6 +101,7 @@ this.wordcards.game = function(retValue) {
       }
       .sentence {
         font-size: large;
+        width: 95%;
       }
       .word-type {
         color: darkgrey;
@@ -211,14 +215,19 @@ this.wordcards.game = function(retValue) {
       {
         key: "getNewWord",
         value: function () {
+
           wordId = wordId + 1;
           // wordId = Math.floor(Math.random() * wordList.length);
           // wordId = 1;
+
           var wordDict = wordList[wordId];
           console.log(wordId.toString() + "th word: " + wordDict["word"]);
           this.shadowRoot.querySelector("#guessWord").innerHTML = wordDict["word"];
           this.shadowRoot.querySelector("#sentence").innerHTML = "";
           this.shadowRoot.querySelector("#wordId").innerHTML = "#" + (wordId + offset);
+
+          var board = this.shadowRoot.querySelector("#wordBoard");
+          board.dataset.state = "guess";
         }
       }, {
         key: "connectedCallback",
@@ -231,21 +240,30 @@ this.wordcards.game = function(retValue) {
             .then(response => { return response.json(); })
             .then(responseJSON => {this.wordsLoaded(responseJSON); });
 
+          var board = rootThis.shadowRoot.querySelector("#wordBoard");
+          board.dataset.state = "guess";
+
+          board.addEventListener("animationend", function(a) {
+            console.log("Animation ended " + a.animationName);
+            if (a.animationName === "FlipIn") {
+              if (board.dataset.state === "guess") {
+                rootThis.showSolution();
+                board.dataset.state = "solution";
+                board.dataset.animation = "flip-out";
+              } else if (board.dataset.state === "solution") {
+                rootThis.hideSolution();
+                board.dataset.state = "guess";
+                board.dataset.animation = "flip-out";
+              }
+            } else if (a.animationName === "FlipOut") {
+
+            }
+          });
 
           this.shadowRoot.querySelector("#showButton").addEventListener("click",
             function() {
-              // rootThis.getNewWord();
               var board = rootThis.shadowRoot.querySelector("#wordBoard");
               board.dataset.animation = "flip-in";
-              board.addEventListener("animationend", function(a) {
-                console.log("Animation ended " + a.animationName);
-                if (a.animationName === "FlipIn") {
-                  rootThis.showSolution();
-                  board.dataset.animation = "flip-out";
-                } else if (a.animationName === "FlipOut") {
-
-                }
-              });
           });
 
           this.shadowRoot.querySelector("#nextButton").addEventListener("click",
