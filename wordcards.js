@@ -109,19 +109,29 @@ this.wordcards.game = function(retValue) {
       }
 
       @media (max-height: 600px) {
+        #wordBoard {
+          line-height: 1em;
+          padding: 10x;
+        }
         .words {
-          font-size: medium;
-          line-height: 2.5em;
+          font-size: small;
+          margin-block-start: 0em;
+        }
+        .wordType {
+          font-size: small;
         }
         .sentence {
-          font-size: medium;
-          line-height: 2.0em;
+          font-size: small;
         }
         button {
           font-size: medium;
           line-height: normal;
+          padding-top: 0.3rem;
+          padding-bottom: 0.3rem;
+          margin-bottom: 0.3rem;
         }
         p {
+          margin-block-start: 0em;
           margin-block-end: 0em;
         }
       }
@@ -147,7 +157,7 @@ this.wordcards.game = function(retValue) {
         position: absolute;
         top: var(--header-height);
         right: 0;
-        padding: 16px;
+        padding: 8px;
         color: #787c7e;
         font-size: 12px;
         text-align: right;
