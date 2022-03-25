@@ -4,7 +4,8 @@ this.wordcards.game = function(retValue) {
   console.log("Welcome to WordCards!");
 
   var wordList = [];
-  var wordId = 0;  
+  var wordId = -1;
+  var offset = 1;
 
   var wordcardsRootElement = document.createElement("template");
   wordcardsRootElement.innerHTML = `
@@ -30,13 +31,13 @@ this.wordcards.game = function(retValue) {
         pointer-events: none;
       }
       #game {
-        width: 100%;
+        width: 90%;
         max-width: var(--game-max-width);
         margin: 0 auto;
         height: calc(100% - var(--header-height));
         display: flex;
         flex-direction: column;
-        font-
+        padding: 0 16px;
       }
       #buttons {
   			width: 100%;
@@ -45,32 +46,84 @@ this.wordcards.game = function(retValue) {
   			height: var(--keyboard-height);
   			display: flex;
   			flex-direction: column;
-        font-size: 1.2em;
 
   		}
       button {
         padding-top: 1rem;
         padding-bottom: 1rem;
         margin-bottom: 1rem;
-        font-size: x-large;
+        font-size: 25px;
         border-radius: 0px;
         border: none;
         background-color: lightskyblue;
+        color: black;
       }
+      p {
+        margin-block-start: 0;
+        margin-block-end: 0.5em;
+      }
+      #report {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+      }
+      .multi {
+        flex-grow: 1;
+      }
+      .middle {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
       #wordBoard {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-grow: 1;
-        overflow: hidden;
+        overflow: auto;
         flex-direction: column;
       }
-      .tile {
-        font-size: xx-large;
+      #numbered {
+        width: 100%;
+      }
+      .words {
+        font-size: 30px;
+        font-weight: bold;
+        margin-block-start: 1.3em;
+      }
+      .wordType {
+        font-size: 30px;
+        font-style: italic;
+        color: darkgrey;
+      }
+      .sentence {
+        font-size: large;
+      }
+      .word-type {
+        color: darkgrey;
+        font-style: italic;
+      }
+
+      @media (max-height: 600px) {
+        .words {
+          font-size: medium;
+          line-height: 2.5em;
+        }
+        .sentence {
+          font-size: medium;
+          line-height: 2.0em;
+        }
+        button {
+          font-size: medium;
+          line-height: normal;
+        }
+        p {
+          margin-block-end: 0em;
+        }
       }
       .tile[data-animation='flip-in'] {
         animation-name: FlipIn;
-        animation-duration: 512ms;
+        animation-duration: 256ms;
         animation-timing-function: ease-in;
       }
       @keyframes FlipIn {
@@ -79,13 +132,25 @@ this.wordcards.game = function(retValue) {
       }
       .tile[data-animation='flip-out'] {
       animation-name: FlipOut;
-      animation-duration: 250ms;
+      animation-duration: 256ms;
       animation-timing-function: ease-in;
     }
     @keyframes FlipOut {
       0% { transform: rotateY(-90deg); }
       100% { transform: rotateY(0);}
     }
+    #wordId {
+        position: absolute;
+        top: var(--header-height);
+        right: 0;
+        padding: 16px;
+        color: #787c7e;
+        font-size: 12px;
+        text-align: right;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
     </style>
     <header>
       <div></div>
@@ -93,11 +158,36 @@ this.wordcards.game = function(retValue) {
       <div></div>
     </header>
     <div id="game">
+      <div id="wordId">#11</div>
       <div id="wordBoard" class="tile">
-        <p id="guessWord"></p>
-        <p id="rest"></p>
+        <p id="guessWord"class="words"></p>
+        <p id="wordType" class="word-type"></p>
+        <p id="tradWord" class="words"></p>
+        <p id="type"></p>
+        <div id="sentence" class="sentence"></div>
+        <div id="numbered">
+          <div id="number1">
+            <p id="trad1" class="words"></p>
+            <p id="type1"class="word-type"></p>
+            <p id="sentence1" class="sentence"></p>
+          </div>
+          <div id="number2"></div>
+            <p id="trad2" class="words"></p>
+            <p id="type2" class="word-type"></p>
+            <p id="sentence2" class="sentence"></p>
+          <div id="number3">
+            <p id="trad3" class="words"></p>
+            <p id="type3" class="word-type"></p>
+            <p id="sentence3" class="sentence"></p>
+          </div>
+        </div>
       </div>
       <div id="buttons">
+        <div id="report">
+          <button class="multi">Hard</button>
+          <button class="multi middle">Medium</button>
+          <button class="multi">Easy</button>
+        </div>
         <button id="showButton">Show</button>
         <button id="nextButton">Next</button>
       </div>
@@ -119,27 +209,38 @@ this.wordcards.game = function(retValue) {
 
     addKeyFunction(returnFunction , [
       {
+        key: "getNewWord",
+        value: function () {
+          wordId = wordId + 1;
+          // wordId = Math.floor(Math.random() * wordList.length);
+          // wordId = 1;
+          var wordDict = wordList[wordId];
+          console.log(wordId.toString() + "th word: " + wordDict["word"]);
+          this.shadowRoot.querySelector("#guessWord").innerHTML = wordDict["word"];
+          this.shadowRoot.querySelector("#sentence").innerHTML = "";
+          this.shadowRoot.querySelector("#wordId").innerHTML = "#" + (wordId + offset);
+        }
+      }, {
         key: "connectedCallback",
         value: function () {
-          var lThis = this;
+          var rootThis = this;
 
+          offset = 1;
           this.shadowRoot.appendChild(wordcardsRootElement.content.cloneNode(!0));
-          fetch("./output.json")
+          fetch("./output1to500.json")
             .then(response => { return response.json(); })
             .then(responseJSON => {this.wordsLoaded(responseJSON); });
 
 
           this.shadowRoot.querySelector("#showButton").addEventListener("click",
             function() {
-              // lThis.getNewWord();
-              var board = lThis.shadowRoot.querySelector("#wordBoard");
+              // rootThis.getNewWord();
+              var board = rootThis.shadowRoot.querySelector("#wordBoard");
               board.dataset.animation = "flip-in";
               board.addEventListener("animationend", function(a) {
                 console.log("Animation ended " + a.animationName);
                 if (a.animationName === "FlipIn") {
-                  var wordDict = wordList[wordId];
-                  lThis.shadowRoot.querySelector("#guessWord").innerHTML = wordDict["trad"];
-                  lThis.shadowRoot.querySelector("#rest").innerHTML = wordDict["sentence"]
+                  rootThis.showSolution();
                   board.dataset.animation = "flip-out";
                 } else if (a.animationName === "FlipOut") {
 
@@ -149,16 +250,50 @@ this.wordcards.game = function(retValue) {
 
           this.shadowRoot.querySelector("#nextButton").addEventListener("click",
             function() {
-              lThis.getNewWord();
+              rootThis.hideSolution();
+              rootThis.getNewWord();
             });
         }
       }, {
-        key: "getNewWord",
-        value: function () {
-          wordId = Math.floor(Math.random() * wordList.length);
+        key: "showSolution",
+        value: function() {
           var wordDict = wordList[wordId];
-          console.log(wordId.toString() + "th word: " + wordDict["word"]);
-          this.shadowRoot.querySelector("#guessWord").innerHTML = wordDict["word"];
+          if (wordDict["trad"]) {
+            this.shadowRoot.querySelector("#tradWord").innerHTML = wordDict["trad"];
+          }
+          if (wordDict["type"]) {
+            this.shadowRoot.querySelector("#wordType").innerHTML = wordDict["type"];
+          }
+          if (wordDict["sentence"]) {
+            var sentenceHTML = wordDict["sentence"].split("–");
+            this.shadowRoot.querySelector("#sentence").innerHTML =
+            "<p>" + sentenceHTML[0] + "</p>" +
+            "<p>" + sentenceHTML[1] + "</p>";
+          }
+          if (wordDict["numbered"]) {
+            for (const [i, v] of wordDict["numbered"].entries()) {
+              console.log("index: " + i + ", value: " + v["sentence"]);
+              this.shadowRoot.querySelector("#trad" + (i + 1)).innerHTML = (i+1) + ". " + v["trad"];
+              this.shadowRoot.querySelector("#type" + (i + 1)).innerHTML = v["type"];
+              var sentenceHTML = v["sentence"].split("–");
+              this.shadowRoot.querySelector("#sentence" + (i + 1)).innerHTML =
+              "<p>" + sentenceHTML[0] + "</p>" +
+              "<p>" + sentenceHTML[1] + "</p>";
+            }
+          }
+        }
+      }, {
+        key: "hideSolution",
+        value: function () {
+          this.shadowRoot.querySelector("#tradWord").innerHTML = "";
+          this.shadowRoot.querySelector("#sentence").innerHTML = "";
+          this.shadowRoot.querySelector("#wordType").innerHTML = "";
+
+          for (var i = 0; i < 3; i++) {
+            this.shadowRoot.querySelector("#trad" + (i + 1)).innerHTML = "";
+            this.shadowRoot.querySelector("#type" + (i + 1)).innerHTML = "";
+            this.shadowRoot.querySelector("#sentence" + (i + 1)).innerHTML = "";
+          }
         }
       }, {
         key: "wordsLoaded",
