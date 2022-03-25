@@ -1,0 +1,741 @@
+[
+  {
+    "word": "bisschen, bissel",
+    "type": "pron",
+    "trad": "a little",
+    "index": 301,
+    "sentence": "Mein Bein schmerzt morgens ein bisschen. – My leg hurts a little in the morning. "
+  },
+  {
+    "word": "deutlich",
+    "type": "adj",
+    "trad": "clear",
+    "index": 302,
+    "sentence": "Ich kann dich nicht verstehen, bitte sprich deutlich. – I can’t understand you, please speak clearly. "
+  },
+  {
+    "word": "anders",
+    "type": "adv",
+    "trad": "different, differently",
+    "index": 303,
+    "sentence": "Meine Meinung ist anders als deine. – My opinion is different from yours. "
+  },
+  {
+    "word": "politisch",
+    "type": "adj",
+    "trad": "political",
+    "index": 304,
+    "sentence": "Ein Krieg hat oft politische Gründe. – War often has political reasons. "
+  },
+  {
+    "word": "lesen",
+    "type": "verb",
+    "trad": "to read",
+    "index": 305,
+    "sentence": "Ich lese viele Bücher. – I read a lot of books. "
+  },
+  {
+    "word": "Blick",
+    "type": "der",
+    "trad": "look, view, glance",
+    "index": 306,
+    "sentence": "Aus deinem Fenster hat man einen schönen Blick über die Stadt. – Your window has a nice view over the city. "
+  },
+  {
+    "word": "Form",
+    "type": "die",
+    "trad": "form, shape",
+    "index": 307,
+    "sentence": "Das Gebäude hat eine schöne Form. – The building has a beautiful shape. "
+  },
+  {
+    "word": "einzeln",
+    "type": "adj",
+    "trad": "individual, single, separately",
+    "index": 308,
+    "sentence": "Ich spreche jedes Wort einzeln. – I speak each word separately. "
+  },
+  {
+    "word": "erreichen",
+    "type": "verb",
+    "trad": "to achieve, reach",
+    "index": 309,
+    "sentence": "Ich erreiche alle meine Ziele. – I achieve all my goals. "
+  },
+  {
+    "word": "vergehen",
+    "type": "verb",
+    "trad": "to pass (time)",
+    "index": 310,
+    "sentence": "Die Zeit vergeht sehr schnell. – Time passes very quickly. "
+  },
+  {
+    "word": "leicht",
+    "type": "adj",
+    "trad": "light, easy",
+    "index": 311,
+    "sentence": "Das ist eine leichte Aufgabe. – It’s an easy task. "
+  },
+  {
+    "word": "je",
+    "type": "",
+    "trad": "",
+    "index": 312,
+    "numbered": [
+      {
+        "index": "1",
+        "type": "adv",
+        "trad": "ever, each",
+        "sentence": "Das kostet vier Euro je Stück. – That costs four euros each. "
+      },
+      {
+        "index": "2",
+        "type": "conj",
+        "trad": "the more",
+        "sentence": "Je später ich ins Bett gehe, desto müder bin ich am Morgen. – The later I go to bed, the more tired I am in the morning. "
+      }
+    ]
+  },
+  {
+    "word": "verlieren",
+    "type": "verb",
+    "trad": "to lose",
+    "index": 313,
+    "sentence": "Johann verliert immer beim Fußball. – Johann always loses at soccer. "
+  },
+  {
+    "word": "beste (r, s)",
+    "type": "adj",
+    "trad": "best",
+    "index": 314,
+    "sentence": "Lisett ist meine beste Freundin. – Lisett is my best friend. "
+  },
+  {
+    "word": "bilden",
+    "type": "verb",
+    "trad": "to form, educate",
+    "index": 315,
+    "sentence": "Wir gehen in die Schule, um uns zu bilden. – We go to school to educate ourselves. "
+  },
+  {
+    "word": "Monat",
+    "type": "der",
+    "trad": "month",
+    "index": 316,
+    "sentence": "Das Jahr hat zwölf Monate. – The year has twelve months. "
+  },
+  {
+    "word": "Lösung",
+    "type": "die",
+    "trad": "solution",
+    "index": 317,
+    "sentence": "Für jedes Problem gibt es eine Lösung. – There is a solution to every problem. "
+  },
+  {
+    "word": "Sache",
+    "type": "die",
+    "trad": "thing",
+    "index": 318,
+    "sentence": "Über solche Sachen wie Armut spricht hier niemand. – Nobody here talks about things like poverty. "
+  },
+  {
+    "word": "bekannt",
+    "type": "adj",
+    "trad": "well-known, famous",
+    "index": 319,
+    "sentence": "Leipzig ist eine bekannte Stadt in Deutschland. – Leipzig is a well-known city in Germany. "
+  },
+  {
+    "word": "Ziel",
+    "type": "das",
+    "trad": "destination, goal",
+    "index": 320,
+    "sentence": "Berlin ist das Ziel unserer Reise. – Berlin is the destination of our journey. "
+  },
+  {
+    "word": "steigen",
+    "type": "verb",
+    "trad": "to climb, increase",
+    "index": 321,
+    "sentence": "Ich steige auf den Berg. – I’m climbing the mountain. "
+  },
+  {
+    "word": "eher",
+    "type": "adv",
+    "trad": "sooner, earlier, more likely, rather",
+    "index": 322,
+    "sentence": "Eher ziehe ich wieder zu meinen Eltern, als einen Tag länger bei dir zu wohnen. – I’d rather move back in with my parents than stay with you one day longer. "
+  },
+  {
+    "word": "essen",
+    "type": "verb",
+    "trad": "to eat",
+    "index": 323,
+    "sentence": "Morgen Abend essen wir Brot. – Tomorrow evening, we will eat bread. "
+  },
+  {
+    "word": "Minute",
+    "type": "die",
+    "trad": "minute",
+    "index": 324,
+    "sentence": "Eine Stunde hat 60 Minuten. – An hour has 60 minutes. "
+  },
+  {
+    "word": "Nacht",
+    "type": "",
+    "trad": "",
+    "index": 325,
+    "numbered": [
+      {
+        "index": "1",
+        "type": "die",
+        "trad": "night",
+        "sentence": "Die Nacht ist dunkel und grau. – The night is dark and gray. "
+      },
+      {
+        "index": "2",
+        "type": "adv",
+        "trad": "at night, nights",
+        "sentence": "Ich arbeite immer nur nachts. – I only work nights. "
+      }
+    ]
+  },
+  {
+    "word": "Platz",
+    "type": "der",
+    "trad": "place, room, square",
+    "index": 326,
+    "sentence": "Mein Haus hat genug Platz für acht Personen. – My house has enough room for eight people. "
+  },
+  {
+    "word": "schlecht",
+    "type": "adj",
+    "trad": "bad",
+    "index": 327,
+    "sentence": "Dein Atem riecht schlecht. – Your breath smells bad. "
+  },
+  {
+    "word": "Spiel",
+    "type": "das",
+    "trad": "game, match",
+    "index": 328,
+    "sentence": "Wir sehen uns das Spiel im Fernsehen an. – We’ll watch the game on TV. "
+  },
+  {
+    "word": "Familie",
+    "type": "die",
+    "trad": "family",
+    "index": 329,
+    "sentence": "Ich feiere meinen Geburtstag mit meiner Familie. – I’m celebrating my birthday with my family. "
+  },
+  {
+    "word": "jemand",
+    "type": "pron",
+    "trad": "someone, somebody",
+    "index": 330,
+    "sentence": "Jemand wie du ist mein Freund. – Someone like you is my friend. "
+  },
+  {
+    "word": "dessen",
+    "type": "pron",
+    "trad": "whose",
+    "index": 331,
+    "sentence": "Der Mann, dessen Frau Geburtstag hat, hat ein Geschenk. – The man whose wife’s birthday it is has a present. "
+  },
+  {
+    "word": "fallen",
+    "type": "verb",
+    "trad": "to fall",
+    "index": 332,
+    "sentence": "Max fällt tief von einer Mauer. – Max falls deep from a wall. "
+  },
+  {
+    "word": "zehn",
+    "type": "num",
+    "trad": "ten",
+    "index": 333,
+    "sentence": "Ein Mensch hat zwei Hände und zehn Finger. – A human has two hands and ten fingers. "
+  },
+  {
+    "word": "Preis",
+    "type": "der",
+    "trad": "price, prize",
+    "index": 334,
+    "sentence": "Der Erste gewinnt einen Preis. – The first one wins a prize. "
+  },
+  {
+    "word": "europäisch",
+    "type": "adj",
+    "trad": "European",
+    "index": 335,
+    "sentence": "Du siehst sehr europäisch aus. – You look very European. "
+  },
+  {
+    "word": "sonst",
+    "type": "adv",
+    "trad": "otherwise",
+    "index": 336,
+    "sentence": "Maggie isst kein Brot, sonst wird ihr schlecht. – Maggie doesn’t eat bread, otherwise she’ll get sick. "
+  },
+  {
+    "word": "Staat",
+    "type": "der",
+    "trad": "state",
+    "index": 337,
+    "sentence": "Der Staat entscheidet über Gesetze und Steuern. – The state decides on laws and taxes. "
+  },
+  {
+    "word": "helfen",
+    "type": "verb",
+    "trad": "to help",
+    "index": 338,
+    "sentence": "Oliver hilft Tim jeden Sonntag bei seinen Aufgaben für die Schule. – Oliver helps Tim with his assignments for school every Sunday. "
+  },
+  {
+    "word": "Bereich",
+    "type": "der",
+    "trad": "area, region",
+    "index": 339,
+    "sentence": "Diesen Bereich darf niemand betreten. – Nobody is allowed to enter this area. "
+  },
+  {
+    "word": "tatsächlich",
+    "type": "adj",
+    "trad": "real, actual",
+    "index": 340,
+    "sentence": "Ich habe tatsächlich den Job bekommen. – I actually got the job. "
+  },
+  {
+    "word": "Ort",
+    "type": "der",
+    "trad": "place, town, location",
+    "index": 341,
+    "sentence": "Die Kirche ist ein friedlicher Ort. – The church is a peaceful place. "
+  },
+  {
+    "word": "Abend",
+    "type": "",
+    "trad": "",
+    "index": 342,
+    "numbered": [
+      {
+        "index": "1",
+        "type": "der",
+        "trad": "evening",
+        "sentence": "Wir gehen morgen Abend ins Kino. – We’re going to the movies tomorrow evening. "
+      },
+      {
+        "index": "2",
+        "type": "adv",
+        "trad": "in the evening",
+        "sentence": "Abends lese ich meinem Kind immer eine Geschichte vor. – I always read my child a story in the evening. "
+      }
+    ]
+  },
+  {
+    "word": "einzig",
+    "type": "adj",
+    "trad": "only, single",
+    "index": 343,
+    "sentence": "Ich bin das einzige Mädchen beim Fußball. – I’m the only girl at soccer. "
+  },
+  {
+    "word": "Stelle",
+    "type": "die",
+    "trad": "place",
+    "index": 344,
+    "sentence": "Sein Name steht an erster Stelle. – His name is in the first place. "
+  },
+  {
+    "word": "unterschiedlich",
+    "type": "adj",
+    "trad": "different",
+    "index": 345,
+    "sentence": "Bei einem Streit gibt es unterschiedliche Meinungen. – In a dispute, there are different opinions. "
+  },
+  {
+    "word": "Gesicht",
+    "type": "das",
+    "trad": "face",
+    "index": 346,
+    "sentence": "Sie hat ein sehr schönes Gesicht. – She has a very beautiful face. "
+  },
+  {
+    "word": "Entwicklung",
+    "type": "die",
+    "trad": "development",
+    "index": 347,
+    "sentence": "Der Film zeigt die Entwicklung eines Menschen von der Geburt bis zum Tod. – The film shows the development of a person from birth to death. "
+  },
+  {
+    "word": "Uhr",
+    "type": "die",
+    "trad": "clock, watch, o’clock",
+    "index": 348,
+    "sentence": "Die Uhr zeigt die Zeit. – The clock shows the time. "
+  },
+  {
+    "word": "mehrere",
+    "type": "pron",
+    "trad": "several, multiple, various",
+    "index": 349,
+    "sentence": "Oft leben mehrere Familien in einem Haus. – Often several families live in one house. "
+  },
+  {
+    "word": "schließen",
+    "type": "verb",
+    "trad": "to close",
+    "index": 350,
+    "sentence": "Das Geschäft schließt heute schon um fünf Uhr. – The store closes at five o’clock today. "
+  },
+  {
+    "word": "schließlich",
+    "type": "adv",
+    "trad": "finally, eventually",
+    "index": 351,
+    "sentence": "Wir haben uns total verlaufen, aber schließlich sind wir doch noch ans Ziel gekommen. – We got completely lost, but eventually we reached our destination. "
+  },
+  {
+    "word": "legen",
+    "type": "verb",
+    "trad": "to lay, put",
+    "index": 352,
+    "sentence": "Mia legt das Buch auf den Tisch. – Mia puts the book on the table. "
+  },
+  {
+    "word": "direkt",
+    "type": "adj",
+    "trad": "direct, straight",
+    "index": 353,
+    "sentence": "Weil es keine direkte Verbindung gibt, muss ich nachher in einen anderen Zug steigen. – Because there’s no direct connection, I’ll have to get on another train later. "
+  },
+  {
+    "word": "daher",
+    "type": "pron",
+    "trad": "from, there, therefore",
+    "index": 354,
+    "sentence": "Ich bin krank, daher kann ich nicht zur Party kommen. – I’m sick, therefore I can’t come to the party. "
+  },
+  {
+    "word": "offen",
+    "type": "adj",
+    "trad": "open",
+    "index": 355,
+    "sentence": "Die Tür ist offen. – The door ist open. "
+  },
+  {
+    "word": "erkennen",
+    "type": "verb",
+    "trad": "to recognize, admit",
+    "index": 356,
+    "sentence": "Babys erkennen ihre Mütter an ihren Stimmen. – Babies recognize their mothers by their voices. "
+  },
+  {
+    "word": "Person",
+    "type": "die",
+    "trad": "person",
+    "index": 357,
+    "sentence": "In den Saal passen zehn Personen. – The hall can accommodate ten people. "
+  },
+  {
+    "word": "Moment",
+    "type": "der",
+    "trad": "moment",
+    "index": 358,
+    "sentence": "Man muss den Moment genießen können. – You have to be able to enjoy the moment. "
+  },
+  {
+    "word": "Schule",
+    "type": "die",
+    "trad": "school",
+    "index": 359,
+    "sentence": "In Deutschland muss jedes Kind zur Schule gehen. – In Germany every child has to go to school. "
+  },
+  {
+    "word": "darin, drin, drinnen",
+    "type": "pron",
+    "trad": "in it, in there, inside",
+    "index": 360,
+    "sentence": "Ich suche meinen Koffer, darin sind meine Sachen. – I’m looking for my suitcase, in there are my things. "
+  },
+  {
+    "word": "Auto",
+    "type": "das",
+    "trad": "automobile, car",
+    "index": 361,
+    "sentence": "Auf der Straße fahren viele Autos. – There are a lot of cars on the road. "
+  },
+  {
+    "word": "niemand",
+    "type": "pron",
+    "trad": "no one, nobody",
+    "index": 362,
+    "sentence": "Niemand kennt die Antwort. – Nobody knows the answer. "
+  },
+  {
+    "word": "Gesellschaft",
+    "type": "die",
+    "trad": "society, company",
+    "index": 363,
+    "sentence": "Jeder ist ein Teil der Gesellschaft. – Everybody is a part of society. "
+  },
+  {
+    "word": "warten",
+    "type": "verb",
+    "trad": "to wait",
+    "index": 364,
+    "sentence": "Ich warte am Bahnhof auf dich. – I’ll wait for you at the station. "
+  },
+  {
+    "word": "vorstellen",
+    "type": "verb",
+    "trad": "to introduce, imagine",
+    "index": 365,
+    "sentence": "Darf ich Ihnen meine Frau Stefanie vorstellen? – May I introduce you to my wife, Stefanie? "
+  },
+  {
+    "word": "früh",
+    "type": "adj",
+    "trad": "early",
+    "index": 366,
+    "sentence": "Ich muss früh aufstehen. – I have to get up early. "
+  },
+  {
+    "word": "treten",
+    "type": "verb",
+    "trad": "to step",
+    "index": 367,
+    "sentence": "Natascha öffnet die Tür und tritt nach draußen. – Natascha opens the door and steps outside. "
+  },
+  {
+    "word": "reden",
+    "type": "verb",
+    "trad": "to talk",
+    "index": 368,
+    "sentence": "Er hat jetzt keine Lust, darüber zu reden. – He doesn’t want to talk about it now. "
+  },
+  {
+    "word": "Gruppe",
+    "type": "die",
+    "trad": "group",
+    "index": 369,
+    "sentence": "Sie müssen in einer Gruppe zusammenarbeiten. – You have to work together in a group. "
+  },
+  {
+    "word": "Ding",
+    "type": "das",
+    "trad": "thing",
+    "index": 370,
+    "sentence": "Was ist das für ein Ding dort? – What’s that thing over there? "
+  },
+  {
+    "word": "na",
+    "type": "part",
+    "trad": "well",
+    "index": 371,
+    "sentence": "Na, was soll ich dazu sagen? – Well, what shall I say to this? "
+  },
+  {
+    "word": "gewinnen",
+    "type": "verb",
+    "trad": "to win, gain",
+    "index": 372,
+    "sentence": "Er gewinnt den ersten Preis im Wettbewerb. – He wins the first prize in the competition. "
+  },
+  {
+    "word": "zunächst",
+    "type": "adv",
+    "trad": "first, at first, for now",
+    "index": 373,
+    "sentence": "Ich sah den Mann zunächst nicht, bis er winkte. – At first I didn’t see the man, until he waved. "
+  },
+  {
+    "word": "damit",
+    "type": "conj",
+    "trad": "so that",
+    "index": 374,
+    "sentence": "Kannst du bitte kommen, damit wir schnell gehen können? – Can you please come so that we can leave quickly? "
+  },
+  {
+    "word": "Tür",
+    "type": "die",
+    "trad": "door",
+    "index": 375,
+    "sentence": "Ich schließe die Tür ab, wenn ich das Haus verlasse. – I’ll lock the door when I leave the house. "
+  },
+  {
+    "word": "Schritt",
+    "type": "der",
+    "trad": "step",
+    "index": 376,
+    "sentence": "Wir müssen unseren Gegnern immer einen Schritt voraus sein. – We need to always be one step ahead of our competitors. "
+  },
+  {
+    "word": "entwickeln",
+    "type": "verb",
+    "trad": "to develop",
+    "index": 377,
+    "sentence": "Die Forscher entwickeln ein neues Medikament. – The researchers are developing a new drug. "
+  },
+  {
+    "word": "meiste",
+    "type": "adj",
+    "trad": "most",
+    "index": 378,
+    "sentence": "Am meisten gefällt mir das rote Kleid. – I like the red dress the most. "
+  },
+  {
+    "word": "Möglichkeit",
+    "type": "die",
+    "trad": "possibility, chance",
+    "index": 379,
+    "sentence": "Es besteht die Möglichkeit, dass ich krank bin. – There’s a chance I’m sick. "
+  },
+  {
+    "word": "Sinn",
+    "type": "der",
+    "trad": "sense, meaning",
+    "index": 380,
+    "sentence": "Dein Argument macht keinen Sinn. – Your argument doesn’t make sense. "
+  },
+  {
+    "word": "passieren",
+    "type": "verb",
+    "trad": "to take place, happen",
+    "index": 381,
+    "sentence": "Ich warte darauf, dass mein Handy klingelt, aber nichts passiert. – I’m waiting for my phone to ring, but nothing is happening. "
+  },
+  {
+    "word": "manchmal",
+    "type": "adv",
+    "trad": "sometimes",
+    "index": 382,
+    "sentence": "Das Wetter hier ist nur manchmal schlecht, meistens scheint die Sonne. – The weather here is only sometimes bad, mostly the sun shines. "
+  },
+  {
+    "word": "Vergleich",
+    "type": "der",
+    "trad": "comparison",
+    "index": 383,
+    "sentence": "Die Schüler sprechen über den Vergleich von Männern und Frauen. – The students talk about the comparison of men and women. "
+  },
+  {
+    "word": "System",
+    "type": "das",
+    "trad": "system",
+    "index": 384,
+    "sentence": "Béatrice benutzt ein System, um ihren Koffer zu packen. – Béatrice uses a system to pack her suitcase. "
+  },
+  {
+    "word": "Rolle",
+    "type": "die",
+    "trad": "role, roll",
+    "index": 385,
+    "sentence": "Die Schauspielerin spielt für das Stück die Rolle einer Mutter. – The actress plays the role of a mother for the play. "
+  },
+  {
+    "word": "Ergebnis",
+    "type": "das",
+    "trad": "result",
+    "index": 386,
+    "sentence": "Die Suche bleibt ohne Ergebnis. – The search remains without result. "
+  },
+  {
+    "word": "vergleichen",
+    "type": "verb",
+    "trad": "to compare",
+    "index": 387,
+    "sentence": "Meine Oma vergleicht immer die Preise, bevor sie ein Produkt kauft. – My grandmother always compares prices before she buys a product. "
+  },
+  {
+    "word": "voll",
+    "type": "adj",
+    "trad": "full",
+    "index": 388,
+    "sentence": "Sprich nicht mit vollem Mund! – Don’t talk with your mouth full! "
+  },
+  {
+    "word": "erwarten",
+    "type": "verb",
+    "trad": "to expect",
+    "index": 389,
+    "sentence": "Er erwartet eine Nachricht von seiner Schwester. – He’s expecting a message from his sister. "
+  },
+  {
+    "word": "obwohl",
+    "type": "conj",
+    "trad": "although",
+    "index": 390,
+    "sentence": "Sie geht alleine nach Hause, obwohl sie weiß, dass es gefährlich ist. – She goes home by herself, although she knows it’s dangerous. "
+  },
+  {
+    "word": "Straße",
+    "type": "die",
+    "trad": "street",
+    "index": 391,
+    "sentence": "Ich wohne in einer ruhigen Straße. – I live in a quiet street. "
+  },
+  {
+    "word": "Angst",
+    "type": "die",
+    "trad": "fear, anxiety",
+    "index": 392,
+    "sentence": "Martin lernt in der Therapie, mit Angst und Stress umzugehen. – Martin learns in therapy how to deal with fear and stress. "
+  },
+  {
+    "word": "allgemein",
+    "type": "adj",
+    "trad": "general",
+    "index": 393,
+    "sentence": "Der Kurs beginnt mit einer allgemeinen Einführung in das Thema. – The course begins with a general introduction to the topic. "
+  },
+  {
+    "word": "fühlen",
+    "type": "verb",
+    "trad": "to feel",
+    "index": 394,
+    "sentence": "Ich fühle mich manchmal einsam. – I feel lonely sometimes. "
+  },
+  {
+    "word": "jene (r, s)",
+    "type": "pron",
+    "trad": "that, those",
+    "index": 395,
+    "sentence": "Ich denke gerne zurück an jene Tage in Frankreich. – I like to think back to those days in France. "
+  },
+  {
+    "word": "erinnern",
+    "type": "verb",
+    "trad": "to remind",
+    "index": 396,
+    "sentence": "Mein Handy erinnert mich an den Termin um 14 Uhr. – My phone reminds me of the appointment at 2:00. "
+  },
+  {
+    "word": "oh",
+    "type": "part",
+    "trad": "oh, aw",
+    "index": 397,
+    "sentence": "Oh, du machst einen Fehler. – Oh, you’re making a mistake. "
+  },
+  {
+    "word": "bedeuten",
+    "type": "verb",
+    "trad": "to mean",
+    "index": 398,
+    "sentence": "Was bedeutet dieses Wort? – What does this word mean? "
+  },
+  {
+    "word": "Stimme",
+    "type": "die",
+    "trad": "voice, vote",
+    "index": 399,
+    "sentence": "Sie singt mit lauter Stimme. – She sings in a loud voice. "
+  },
+  {
+    "word": "Reaktion",
+    "type": "die",
+    "trad": "reaction",
+    "index": 400,
+    "sentence": "Tom beobachtet die Reaktion von Tina, als sie ihr Geschenk sieht. – Tom watches Tina’s reaction when she sees her present. "
+  }
+]

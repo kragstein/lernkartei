@@ -4,8 +4,12 @@ import json
 
 print("Parsing raw text to json")
 
-with io.open('1_to_100_words_raw.txt', mode="r", encoding="utf-8") as f:
-    word_count = 1
+word_count = 401
+
+output_json_filename = f'output{word_count}to{word_count+99}.json'
+
+with io.open(f'{word_count}_to_{word_count+99}_words_raw.txt', mode="r", encoding="utf-8") as f:
+
     line_count = 0
 
     is_sentence = False
@@ -17,8 +21,7 @@ with io.open('1_to_100_words_raw.txt', mode="r", encoding="utf-8") as f:
 
     word_types_list = ["art", "pron", "conj", "prep", "verb",
                        "aux", "part", "adv", "adj", "interj",
-                       "der", "die", "das"]
-
+                       "der", "die", "das", "num"]
 
     for line in f:
         line = line.strip()
@@ -36,9 +39,9 @@ with io.open('1_to_100_words_raw.txt', mode="r", encoding="utf-8") as f:
                     word_dict["sentence"] = line + " "
             else:
                 if "sentence" in word_dict["numbered"][numbered_def-1].keys():
-                    word_dict["numbered"][numbered_def - 1]["sentence"] += " " + line
+                    word_dict["numbered"][numbered_def - 1]["sentence"] += line + " "
                 else:
-                    word_dict["numbered"][numbered_def - 1]["sentence"] = line
+                    word_dict["numbered"][numbered_def - 1]["sentence"] = line + " "
 
             if line[-1] in [".", "?", "!"]:
                 is_sentence = False
@@ -49,7 +52,7 @@ with io.open('1_to_100_words_raw.txt', mode="r", encoding="utf-8") as f:
             continue
         # print(f"Line: {line}")
         if line.startswith(str(word_count)):
-            if line_count in range(2, 11):
+            if (line_count in range(2, 11)) and (word_count < 10):
                 pass
             else:
                 # store the last word
@@ -64,16 +67,77 @@ with io.open('1_to_100_words_raw.txt', mode="r", encoding="utf-8") as f:
                     word = items[1]
                     word_type = ""
                     trad = ""
+                elif False:
+                    # 209 Million, Mio. die million
+                    # 240 Doktor, Dr. der doctor
+                    # 268 Abbildung, Abb.die illustration
+                    # 291 beziehungsweise, bzw. conj or, respectively
+                    # 415 Universität, Uni die university
+                    # 453 Milliarde, Mrd.die
+                    # 464 befinden (sich) verb to be
+                    # 479 Meter, m der meter
+                    # 480 nahe, nah
+                    billion
+                    pass
+                elif line.find("selbst, selber") > -1:
+                    word = "selbst, selber"
+                    word_type = ""
+                    trad = ""
+                elif line.find("eben, ebend") > -1:
+                    word = "eben, ebend"
+                    word_type = ""
+                    trad = ""
+                elif line.find("nun, nu") > -1:
+                    word = "nun, nu"
+                    word_type = "adv"
+                    trad = "now"
+                elif line.find("der, das") > -1:
+                    line = " ".join(line.split(" ")[1:])
+                    start = line.index("der, das")
+                    end = start + 8
+                    word = line[:start]
+                    rest = line[end:].strip().split(" ")
+                    word_type = line[start:end]
+                    trad = " ".join(rest[:])
                 elif (len(items) > 2) and (items[2] in word_types_list):
                     word = items[1]
                     word_type = items[2]
                     trad = " ".join(items[3:])
-                # elif parens see #87 jede
+                elif line.find("(r, s)") > -1:
+                    line = " ".join(line.split(" ")[1:])
+                    start = line.index("(r, s)")
+                    end = start + 6
+                    word = line[:end]
+                    rest = line[end:].strip().split(" ")
+                    word_type = rest[0]
+                    trad = " ".join(rest[1:])
+                elif line.find(",") > -1 and (line.find("pron") > -1 or line.find("part") > -1 or line.find("adv") > -1):
+                    if line.find(",") < line.find("pron"):
+                        line = " ".join(line.split(" ")[1:])
+                        sep = line.index("pron")
+                        word = line[:sep].strip()
+                        word_type = "pron"
+                        rest = line[sep:].strip().split(" ")
+                        trad = " ".join(rest[1:])
+                    if line.find(",") < line.find("part"):
+                        line = " ".join(line.split(" ")[1:])
+                        sep = line.index("part")
+                        word = line[:sep].strip()
+                        word_type = "part"
+                        rest = line[sep:].strip().split(" ")
+                        trad = " ".join(rest[1:])
+                    if line.find(",") < line.find("adv"):
+                        line = " ".join(line.split(" ")[1:])
+                        sep = line.index("adv")
+                        word = line[:sep].strip()
+                        word_type = "adv"
+                        rest = line[sep:].strip().split(" ")
+                        trad = " ".join(rest[1:])
                 else:
                     word, word_type, *trad_list = (line.split(" ") + [""] + [""])[1:]
                     trad = " ".join(trad_list).strip()
 
-                print(f"Word: {word}, type: {word_type}, trad: {trad}")
+                print(f"Word: {word}\t\ttype: {word_type}, trad: {trad}")
                 word_dict["word"] = word
                 word_dict["type"] = word_type
                 word_dict["trad"] = trad
@@ -86,7 +150,7 @@ with io.open('1_to_100_words_raw.txt', mode="r", encoding="utf-8") as f:
             index, word_type, *trad_list = (line.split(" ") + [""] + [""])
             trad = " ".join(trad_list).strip()
             # doesn't work at mich 65
-            print(f"Sub-def: #{index} {word_type}, trad: {trad}")
+            print(f"Sub-def: #{index}\t\ttype: {word_type}, trad: {trad}")
 
             if numbered_def == 1:
                 word_dict["numbered"] = [{
@@ -105,5 +169,5 @@ with io.open('1_to_100_words_raw.txt', mode="r", encoding="utf-8") as f:
         word_dict = {}
     # print(json.dumps(word_list, indent=2))
 
-with io.open('output101to200.json', mode="w", encoding="utf-8") as out:
+with io.open(output_json_filename, mode="w", encoding="utf-8") as out:
     json.dump(word_list, out, indent=2, ensure_ascii=False)

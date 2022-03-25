@@ -1,0 +1,741 @@
+[
+  {
+    "word": "wirken",
+    "type": "verb",
+    "trad": "to have an effect, take effect, work",
+    "index": 401,
+    "sentence": "Als das Medikament wirkt, hat Markus keine Schmerzen mehr. – When the medication takes effect, Markus is no longer in pain. "
+  },
+  {
+    "word": "darstellen",
+    "type": "verb",
+    "trad": "to depict, portray, show",
+    "index": 402,
+    "sentence": "Das Bild stellt eine Frau mit ihrem Hund dar. – The picture shows a woman with her dog. "
+  },
+  {
+    "word": "Raum",
+    "type": "der",
+    "trad": "room, space",
+    "index": 403,
+    "sentence": "Das Seminar findet morgen im Raum 1216 statt. – The seminar will take place tomorrow in room 1216. "
+  },
+  {
+    "word": "Eltern",
+    "type": "die",
+    "trad": "(pl) parents",
+    "index": 404,
+    "sentence": "Die Eltern lieben ihre Tochter. – Parents love their daughter. "
+  },
+  {
+    "word": "bezeichnen",
+    "type": "verb",
+    "trad": "to call, name",
+    "index": 405,
+    "sentence": "Ärzte werden auch als Doktoren bezeichnet. – Physicians are also called doctors. "
+  },
+  {
+    "word": "Funktion",
+    "type": "die",
+    "trad": "function",
+    "index": 406,
+    "sentence": "Die Funktion vom Gesetz ist es, die Rechte der Menschen zu schützen. – The function of the law is to protect people’s rights. "
+  },
+  {
+    "word": "häufig",
+    "type": "adj",
+    "trad": "frequent",
+    "index": 407,
+    "sentence": "Weil die Krankheit sehr häufig auftritt, wird ein neues Medikament dagegen entwickelt. – Because the disease occurs very frequently, a new drug is being developed. "
+  },
+  {
+    "word": "erscheinen",
+    "type": "verb",
+    "trad": "to appear",
+    "index": 408,
+    "sentence": "Auf dem Bildschirm erscheint ein seltsames Symbol. – A strange symbol appears on the screen. "
+  },
+  {
+    "word": "USA",
+    "type": "(Vereinigte",
+    "trad": "Staaten von Amerika) die USA,",
+    "index": 409,
+    "sentence": "USA ist die Abkürzung von United States of America. – USA is the abbreviation for the United States of America. "
+  },
+  {
+    "word": "Flüchtling",
+    "type": "der",
+    "trad": "refugee",
+    "index": 410,
+    "sentence": "Viele Länder gewähren die Aufnahme von Flüchtlingen. – Many countries grant entry to refugees. "
+  },
+  {
+    "word": "früher",
+    "type": "adv",
+    "trad": "in former times",
+    "index": 411,
+    "sentence": "Früher war Deutschland in Osten und Westen geteilt. – In former times Germany was divided into East and West. "
+  },
+  {
+    "word": "pro",
+    "type": "",
+    "trad": "",
+    "index": 412,
+    "numbered": [
+      {
+        "index": "1",
+        "type": "prep",
+        "trad": "per",
+        "sentence": "Sie verdienen zwölf Euro pro Stunde. – They earn twelve euros per hour. "
+      },
+      {
+        "index": "2",
+        "type": "das",
+        "trad": "pro",
+        "sentence": "Das Pro an dem Haus sind die vielen Fenster. – The pro of the house is the many windows. "
+      }
+    ]
+  },
+  {
+    "word": "ergeben",
+    "type": "verb",
+    "trad": "to result in, produce",
+    "index": 413,
+    "sentence": "Die Untersuchung ergibt keinen Beweis für seine Schuld. – The investigation results in no evidence of his guilt. "
+  },
+  {
+    "word": "entscheiden",
+    "type": "verb",
+    "trad": "to decide",
+    "index": 414,
+    "sentence": "Er kann sich nicht entscheiden, was er essen möchte. – He can’t decide what he wants to eat. "
+  },
+  {
+    "word": "Universität, Uni",
+    "type": "",
+    "trad": "university",
+    "index": 415,
+    "sentence": "Die Universität Heidelberg ist die älteste Universität Deutschlands. – The University of Heidelberg is the oldest university in Germany. "
+  },
+  {
+    "word": "betreffen",
+    "type": "verb",
+    "trad": "to affect, concern",
+    "index": 416,
+    "sentence": "Die Frage nach der Zukunft dieser Welt betrifft uns alle. – The question of the future of this world concerns all of us. "
+  },
+  {
+    "word": "oben",
+    "type": "adv",
+    "trad": "above, up there",
+    "index": 417,
+    "sentence": "Oben auf dem Dach sitzt ein Vogel. – There’s a bird up on the roof. "
+  },
+  {
+    "word": "Richtung",
+    "type": "die",
+    "trad": "direction",
+    "index": 418,
+    "sentence": "In welche Richtung müssen wir fahren? – In which direction do we have to drive? "
+  },
+  {
+    "word": "bestimmen",
+    "type": "verb",
+    "trad": "to decide, determine",
+    "index": 419,
+    "sentence": "Du bestimmst, welchen Film wir uns ansehen. – You decide what movie we are going to watch. "
+  },
+  {
+    "word": "fehlen",
+    "type": "verb",
+    "trad": "to lack, be missing, be absent",
+    "index": 420,
+    "sentence": "Anita ist krank und fehlt heute in der Schule. – Anita is ill and missing from school today. "
+  },
+  {
+    "word": "Sprache",
+    "type": "die",
+    "trad": "language",
+    "index": 421,
+    "sentence": "Englisch ist eine der am häufigsten gelernten Sprachen. – English is one of the most widely learned languages. "
+  },
+  {
+    "word": "Produkt",
+    "type": "das",
+    "trad": "product",
+    "index": 422,
+    "sentence": "Unsere Firma verkauft viele Produkte ins Ausland. – Our company sells many products abroad. "
+  },
+  {
+    "word": "Situation",
+    "type": "die",
+    "trad": "situation",
+    "index": 423,
+    "sentence": "Die politische Situation im Land hat sich stark verändert. – The political situation in the country has changed considerably. "
+  },
+  {
+    "word": "außerdem",
+    "type": "adv",
+    "trad": "besides, in addition",
+    "index": 424,
+    "sentence": "Es ist zu früh zum Schlafen, außerdem bin ich noch nicht müde. – It is too early to sleep, and besides, I am not tired yet. "
+  },
+  {
+    "word": "nämlich",
+    "type": "part",
+    "trad": "you see, namely",
+    "index": 425,
+    "sentence": "Ich habe nämlich doch Recht! – You see, I’m right after all! "
+  },
+  {
+    "word": "international",
+    "type": "adj",
+    "trad": "international",
+    "index": 426,
+    "sentence": "Wir arbeiten eng mit internationalen Firmen zusammen. – We work closely with international companies. "
+  },
+  {
+    "word": "Anfang",
+    "type": "der",
+    "trad": "beginning",
+    "index": 427,
+    "sentence": "Der Anfang des Films war sehr traurig. – The beginning of the film was very sad. "
+  },
+  {
+    "word": "sechs",
+    "type": "num",
+    "trad": "six",
+    "index": 428,
+    "sentence": "Drei plus drei ergibt sechs. – Three plus three equals six. "
+  },
+  {
+    "word": "nutzen",
+    "type": "verb",
+    "trad": "to use",
+    "index": 429,
+    "sentence": "Sie nutzt jede freie Minute zum Lesen. – She uses every free minute to read. "
+  },
+  {
+    "word": "sozial",
+    "type": "adj",
+    "trad": "social",
+    "index": 430,
+    "sentence": "Jemand, der viele Freunde hat, lebt in einem guten sozialen Umfeld. – Someone who has a lot of friends lives in a good social environment. "
+  },
+  {
+    "word": "Folge",
+    "type": "die",
+    "trad": "result, consequences",
+    "index": 431,
+    "sentence": "Deine Entscheidung wird Folgen haben. – Your decision will have consequences. "
+  },
+  {
+    "word": "Satz",
+    "type": "der",
+    "trad": "sentence",
+    "index": 432,
+    "sentence": "Der Satz besteht aus sechs Wörtern. – The sentence consists of six words. "
+  },
+  {
+    "word": "manche (r, s)",
+    "type": "pron",
+    "trad": "some, many a",
+    "index": 433,
+    "sentence": "Manche Menschen mögen keinen Kaffee. – Some people don’t like coffee. "
+  },
+  {
+    "word": "Verbindung",
+    "type": "die",
+    "trad": "connection, link",
+    "index": 434,
+    "sentence": "Entschuldige, die Verbindung ist schlecht. – Sorry, this connection is bad. "
+  },
+  {
+    "word": "beschreiben",
+    "type": "verb",
+    "trad": "to describe",
+    "index": 435,
+    "sentence": "Bitte beschreibe mir dein Haus, damit ich es finde. – Please describe your house so I can find it. "
+  },
+  {
+    "word": "Licht",
+    "type": "das",
+    "trad": "light",
+    "index": 436,
+    "sentence": "Ich brauche ein helleres Licht zum Lesen. – I need a brighter light to read. "
+  },
+  {
+    "word": "ähnlich",
+    "type": "adj",
+    "trad": "similar",
+    "index": 437,
+    "sentence": "Wir haben ähnliche Interessen. – We have similar interests. "
+  },
+  {
+    "word": "Regel",
+    "type": "die",
+    "trad": "rule",
+    "index": 438,
+    "sentence": "Diese Schule hat strenge Regeln. – This school has strict rules. "
+  },
+  {
+    "word": "gegenüber",
+    "type": "prep",
+    "trad": "opposite",
+    "index": 439,
+    "sentence": "Seine Frau sitzt ihm gegenüber. – His wife is sitting opposite him. "
+  },
+  {
+    "word": "Kollege",
+    "type": "der",
+    "trad": "colleague",
+    "index": 440,
+    "sentence": "Diana hat nur nette Kolleginnen bei der Arbeit. "
+  },
+  {
+    "word": "bisher",
+    "type": "adv",
+    "trad": "until now, up to now, yet",
+    "index": 441,
+    "sentence": "Bisher gab es noch keinen Regen, aber bestimmt bald. – It hasn’t rained yet, but it will soon. "
+  },
+  {
+    "word": "tief",
+    "type": "adj",
+    "trad": "deep",
+    "index": 442,
+    "sentence": "Der See ist sehr tief, ich kann den Boden nicht sehen. – The lake is very deep; I can’t see the bottom. "
+  },
+  {
+    "word": "halb",
+    "type": "adj",
+    "trad": "half",
+    "index": 443,
+    "sentence": "Er ist halb so schwer wie ich. – He’s half my weight. "
+  },
+  {
+    "word": "lachen",
+    "type": "verb",
+    "trad": "to laugh",
+    "index": 444,
+    "sentence": "Die Kinder lachen, weil der Film so lustig ist. – The children are laughing because the movie is so funny. "
+  },
+  {
+    "word": "ebenfalls",
+    "type": "adv",
+    "trad": "likewise, also, as well",
+    "index": 445,
+    "sentence": "Dieses Hotel bietet ebenfalls einen Blick aufs Meer. – This hotel also offers a view of the sea. "
+  },
+  {
+    "word": "sofort",
+    "type": "adv",
+    "trad": "immediately",
+    "index": 446,
+    "sentence": "Daniel braucht sofort einen Arzt. – Daniel needs a doctor immediately. "
+  },
+  {
+    "word": "Grenze",
+    "type": "die",
+    "trad": "border, frontier",
+    "index": 447,
+    "sentence": "An der Grenze kontrolliert die Polizei die Autos. – At the border, the police check the cars. "
+  },
+  {
+    "word": "ändern",
+    "type": "verb",
+    "trad": "to change",
+    "index": 448,
+    "sentence": "Der Lehrer ändert die Regeln des Spiels, damit es schwerer wird. – The teacher changes the rules of the game to make it harder. "
+  },
+  {
+    "word": "Entscheidung",
+    "type": "die",
+    "trad": "decision",
+    "index": 449,
+    "sentence": "Manchmal muss man schwierige Entscheidungen treffen. – Sometimes you have to make difficult decisions. "
+  },
+  {
+    "word": "verlassen",
+    "type": "verb",
+    "trad": "to leave",
+    "index": 450,
+    "sentence": "In einem Monat werden sie das Land verlassen. – They’ll be leaving the country in a month. "
+  },
+  {
+    "word": "Idee",
+    "type": "die",
+    "trad": "idea",
+    "index": 451,
+    "sentence": "Marion hat eine Idee, wie man das Problem lösen kann. – Marion has an idea how to solve the problem. "
+  },
+  {
+    "word": "verbinden",
+    "type": "verb",
+    "trad": "to connect, link, unite",
+    "index": 452,
+    "sentence": "Musik verbindet die Menschen. – Music connects people. "
+  },
+  {
+    "word": "Milliarde, Mrd.",
+    "type": "die",
+    "trad": "billion",
+    "index": 453,
+    "sentence": "Er hat Milliarden mit seinem Produkt verdient. – He has made billions with his product. "
+  },
+  {
+    "word": "endlich",
+    "type": "adv",
+    "trad": "finally, at last",
+    "index": 454,
+    "sentence": "Endlich scheint die Sonne wieder. – Finally the sun is shining again. "
+  },
+  {
+    "word": "Energie",
+    "type": "die",
+    "trad": "energy",
+    "index": 455,
+    "sentence": "Eine Familie nutzt jeden Tag eine Menge Energie. – A family uses a lot of energy every day. "
+  },
+  {
+    "word": "plötzlich",
+    "type": "adv",
+    "trad": "suddenly",
+    "index": 456,
+    "sentence": "Plötzlich hört Jakob ein Geräusch. – Suddenly Jakob hears a noise. "
+  },
+  {
+    "word": "danach",
+    "type": "pron",
+    "trad": "after it, afterwards",
+    "index": 457,
+    "sentence": "Ich mache Sport und danach trinke ich viel Wasser. – I exercise and after that I drink a lot of water. "
+  },
+  {
+    "word": "Kraft",
+    "type": "die",
+    "trad": "strength, power",
+    "index": 458,
+    "sentence": "Um diese schwere Tasche zu tragen, brauchst du viel Kraft. – It takes a lot of strength for you to carry that heavy bag. "
+  },
+  {
+    "word": "lieber",
+    "type": "adv",
+    "trad": "rather",
+    "index": 459,
+    "sentence": "Ich würde lieber am Meer wohnen. – I’d rather live by the sea. "
+  },
+  {
+    "word": "gehören",
+    "type": "verb",
+    "trad": "to belong",
+    "index": 460,
+    "sentence": "Das Buch gehört mir. – The book belongs to me. "
+  },
+  {
+    "word": "einsetzen",
+    "type": "verb",
+    "trad": "to put in, insert",
+    "index": 461,
+    "sentence": "Setzen Sie die richtigen Wörter in die Lücken im Satz ein. – Insert the correct words in the gaps in the sentence. "
+  },
+  {
+    "word": "Gefühl",
+    "type": "das",
+    "trad": "feeling",
+    "index": 462,
+    "sentence": "Er verletzt Stefans Gefühle. – He hurts Stefan’s feelings. "
+  },
+  {
+    "word": "trotzdem",
+    "type": "adv",
+    "trad": "nevertheless",
+    "index": 463,
+    "sentence": "Es ist kalt, aber ich fahre trotzdem mit dem Fahrrad. – It is cold, but I’m nevertheless riding my bike. "
+  },
+  {
+    "word": "befinden (sich)",
+    "type": "verb",
+    "trad": "to be",
+    "index": 464,
+    "sentence": "Das Restaurant befindet sich in der Nähe des Bahnhofs. – The restaurant is near the railway station. "
+  },
+  {
+    "word": "Information",
+    "type": "die",
+    "trad": "information",
+    "index": 465,
+    "sentence": "Jana sucht nach Informationen in der Bibliothek. – Jana is looking for information in the library. "
+  },
+  {
+    "word": "dadurch",
+    "type": "pron",
+    "trad": "through it, as a result, as a",
+    "index": 466,
+    "sentence": "Toni raucht nicht mehr und lebt dadurch gesünder. – Toni no longer smokes and is healthier as a result. "
+  },
+  {
+    "word": "dagegen",
+    "type": "pron",
+    "trad": "against it, on the other hand",
+    "index": 467,
+    "sentence": "Mein Eltern sind dagegen, dass ich ein Auto bekomme. – My parents are against my getting a car. "
+  },
+  {
+    "word": "Weise",
+    "type": "die",
+    "trad": "way, manner",
+    "index": 468,
+    "sentence": "Sie erledigt die Arbeit in einer ruhigen Weise. "
+  },
+  {
+    "word": "Zukunft",
+    "type": "die",
+    "trad": "future",
+    "index": 469,
+    "sentence": "In der Zukunft wird die Arbeit vieler Menschen von Maschinen gemacht. – In the future, many people’s work will be done by machines. "
+  },
+  {
+    "word": "wachsen",
+    "type": "verb",
+    "trad": "to grow",
+    "index": 470,
+    "sentence": "Kinder wachsen schneller als Erwachsene. – Children grow faster than adults. "
+  },
+  {
+    "word": "bitte",
+    "type": "adv",
+    "trad": "please",
+    "index": 471,
+    "sentence": "Kannst du bitte still sein! – Can you please be quiet! "
+  },
+  {
+    "word": "weiß",
+    "type": "adj",
+    "trad": "white",
+    "index": 472,
+    "sentence": "Der Sand ist so weiß wie Schnee. – The sand is as white as snow. "
+  },
+  {
+    "word": "Text",
+    "type": "der",
+    "trad": "text",
+    "index": 473,
+    "sentence": "Wir lesen und schreiben Texte zum Thema Natur. – We read and write texts about nature. "
+  },
+  {
+    "word": "schwarz",
+    "type": "adj",
+    "trad": "black",
+    "index": 474,
+    "sentence": "Das Gegenteil von weiß ist schwarz. – The opposite of white is black. "
+  },
+  {
+    "word": "sterben",
+    "type": "verb",
+    "trad": "to die",
+    "index": 475,
+    "sentence": "Ohne Wasser stirbt man. – Without water, you die. "
+  },
+  {
+    "word": "Markt",
+    "type": "der",
+    "trad": "market",
+    "index": 476,
+    "sentence": "Jede Woche gibt es hier einen Markt mit Produkten aus der Region. – Every week there is a market with products from the region. "
+  },
+  {
+    "word": "rot",
+    "type": "adj",
+    "trad": "red",
+    "index": 477,
+    "sentence": "Blut ist rot. – Blood is red. "
+  },
+  {
+    "word": "halt",
+    "type": "part",
+    "trad": "just, simply",
+    "index": 478,
+    "sentence": "Damit musst du halt umgehen können. – You just have to be able to handle it. "
+  },
+  {
+    "word": "Meter, m",
+    "type": "der",
+    "trad": "meter",
+    "index": 479,
+    "sentence": "Der Meter Stoff ist hier sehr billig. – A meter of fabric here is very cheap. "
+  },
+  {
+    "word": "nahe, nah",
+    "type": "",
+    "trad": "",
+    "index": 480,
+    "numbered": [
+      {
+        "index": "1",
+        "type": "adj",
+        "trad": "near(by), close",
+        "sentence": "Der Weg führt zu dem nahen Wald. – The path leads to the nearby forest. "
+      },
+      {
+        "index": "2",
+        "type": "prep",
+        "trad": "near, close to",
+        "sentence": "Nah der Stadt gibt es ein Schloss. – Near the city is a castle. "
+      }
+    ]
+  },
+  {
+    "word": "Hilfe",
+    "type": "die",
+    "trad": "help",
+    "index": 481,
+    "sentence": "Brauchen Sie Hilfe? – Do you need help? "
+  },
+  {
+    "word": "Kapitel",
+    "type": "das",
+    "trad": "chapter",
+    "index": 482,
+    "sentence": "Louisa möchte noch das Kapitel im Buch zu Ende lesen. – Louisa wants to finish the chapter in the book. "
+  },
+  {
+    "word": "ausgehen",
+    "type": "verb",
+    "trad": "to go out, assume",
+    "index": 483,
+    "sentence": "Wir gehen davon aus, dass du kommst. – We assume you’ll be coming. "
+  },
+  {
+    "word": "Bedeutung",
+    "type": "die",
+    "trad": "meaning, significance",
+    "index": 484,
+    "sentence": "Welche Bedeutung hat dieses Zeichen? – What does this sign mean? "
+  },
+  {
+    "word": "betrachten",
+    "type": "verb",
+    "trad": "to look at, consider",
+    "index": 485,
+    "sentence": "Ich betrachte diese Aussage als nicht relevant. "
+  },
+  {
+    "word": "Chemie",
+    "type": "die",
+    "trad": "chemistry",
+    "index": 486,
+    "sentence": "Er studiert Chemie, weil er gern Experimente durchführt. – He is studying chemistry because he likes to carry out experiments. "
+  },
+  {
+    "word": "Luft",
+    "type": "die",
+    "trad": "air",
+    "index": 487,
+    "sentence": "Die Qualität der Luft ist auf dem Land besser. – The air quality is better in the country. "
+  },
+  {
+    "word": "Körper",
+    "type": "der",
+    "trad": "body",
+    "index": 488,
+    "sentence": "Stefanie hat einen sportlichen Körper. – Stefanie has an athletic body. "
+  },
+  {
+    "word": "Struktur",
+    "type": "die",
+    "trad": "structure",
+    "index": 489,
+    "sentence": "Der Text folgt einer klaren Struktur. – The text follows a clear structure. "
+  },
+  {
+    "word": "stimmen",
+    "type": "verb",
+    "trad": "to be correct, vote, tune",
+    "index": 490,
+    "sentence": "Alle stimmen gegen Ninas Idee. – Everyone votes against Nina’s idea. "
+  },
+  {
+    "word": "bitten",
+    "type": "verb",
+    "trad": "to request, ask",
+    "index": 491,
+    "sentence": "Thomas bittet mich um Hilfe. – Thomas asks me for help. "
+  },
+  {
+    "word": "Jahrhundert",
+    "type": "das",
+    "trad": "century",
+    "index": 492,
+    "sentence": "Das ist der schlimmste Sturm des Jahrhunderts. – This is the worst storm of the century. "
+  },
+  {
+    "word": "wahrscheinlich",
+    "type": "",
+    "trad": "",
+    "index": 493,
+    "numbered": [
+      {
+        "index": "1",
+        "type": "adj",
+        "trad": "likely, probable",
+        "sentence": "Das ist möglich, aber nicht sehr wahrscheinlich. – It’s possible, but not very likely. "
+      },
+      {
+        "index": "2",
+        "type": "adv",
+        "trad": "probably, likely",
+        "sentence": "Wissenschaftler sagen, dass es wahrscheinlich ein trockener Sommer wird. – Scientists say it will probably be a dry summer. "
+      }
+    ]
+  },
+  {
+    "word": "öffentlich",
+    "type": "adj",
+    "trad": "public",
+    "index": 494,
+    "sentence": "Sie ist eine Person des öffentlichen Lebens. – She’s a public figure. "
+  },
+  {
+    "word": "euch",
+    "type": "pron",
+    "trad": "you, yourselves",
+    "index": 495,
+    "sentence": "Ihr solltest euch mehr Zeit für euch nehmen. – You should take more time for yourselves. "
+  },
+  {
+    "word": "insgesamt",
+    "type": "adv",
+    "trad": "in all, altogether, in total",
+    "index": 496,
+    "sentence": "Das Hotel hat insgesamt zehn Zimmer. – The hotel has ten rooms altogether. "
+  },
+  {
+    "word": "anfangen",
+    "type": "verb",
+    "trad": "to begin, start",
+    "index": 497,
+    "sentence": "Ich fange immer um 8 Uhr mit meiner Arbeit an. – I always start work at 8:00. "
+  },
+  {
+    "word": "genug",
+    "type": "adv",
+    "trad": "enough",
+    "index": 498,
+    "sentence": "Haben wir genug Wasser für alle Personen? – Do we have enough water for everyone? "
+  },
+  {
+    "word": "Deutsche",
+    "type": "der, die",
+    "trad": "German",
+    "index": 499,
+    "sentence": "Dietrich kommt aus Deutschland, er ist Deutscher. – Dietrich is from Germany, he is German. "
+  },
+  {
+    "word": "verändern",
+    "type": "verb",
+    "trad": "to change",
+    "index": 500,
+    "sentence": "Wir wollen die Welt verändern. – We want to change the world. "
+  }
+]

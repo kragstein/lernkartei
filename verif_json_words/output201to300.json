@@ -1,0 +1,786 @@
+[
+  {
+    "word": "besser",
+    "type": "adj",
+    "trad": "better",
+    "index": 201,
+    "sentence": "Kevin kann besser schwimmen als sein Bruder. – Kevin swims better than his brother. "
+  },
+  {
+    "word": "fast",
+    "type": "adv",
+    "trad": "almost",
+    "index": 202,
+    "sentence": "Ich hätte fast den Bus verpasst. – I almost missed the bus. "
+  },
+  {
+    "word": "schnell",
+    "type": "adj",
+    "trad": "fast",
+    "index": 203,
+    "sentence": "Mario kann sehr schnell rennen. – Mario can run very fast. "
+  },
+  {
+    "word": "Stadt",
+    "type": "die",
+    "trad": "city, town",
+    "index": 204,
+    "sentence": "London, Paris und Berlin sind große Städte. – London, Paris, and Berlin are big cities. "
+  },
+  {
+    "word": "spielen",
+    "type": "verb",
+    "trad": "to play",
+    "index": 205,
+    "sentence": "Die Kinder spielen im Garten. – The children are playing in the garden. "
+  },
+  {
+    "word": "zwar",
+    "type": "adv",
+    "trad": "admittedly, to be precise",
+    "index": 206,
+    "sentence": "Wir kommen am Nachmittag an, und zwar um 14:37 Uhr. – We’ll arrive in the afternoon, at 2:37 pm to be precise. "
+  },
+  {
+    "word": "Euro",
+    "type": "der",
+    "trad": "euro (unit of currency)",
+    "index": 207,
+    "sentence": "In fast allen Ländern der EU kann man mit Euro bezahlen. – In almost all EU countries you can pay in euros. "
+  },
+  {
+    "word": "Arbeit",
+    "type": "die",
+    "trad": "work",
+    "index": 208,
+    "sentence": "Es liegt noch viel Arbeit vor uns. – We still have a lot of work ahead of us. "
+  },
+  {
+    "word": "Million, Mio.",
+    "type": "die",
+    "trad": "million",
+    "index": 209,
+    "sentence": "Die Stadt Tokio hat ca. 35 Millionen Einwohner. – The city of Tokyo has about 35 million inhabitants. "
+  },
+  {
+    "word": "Problem",
+    "type": "das",
+    "trad": "problem",
+    "index": 210,
+    "sentence": "Sie müssen das Problem so schnell wie möglich lösen. – You have to solve the problem as fast as possible. "
+  },
+  {
+    "word": "verstehen",
+    "type": "verb",
+    "trad": "to understand",
+    "index": 211,
+    "sentence": "Rede bitte etwas lauter, ich kann dich nicht verstehen. – Please speak a little louder, I can’t understand you. "
+  },
+  {
+    "word": "bekommen",
+    "type": "verb",
+    "trad": "to get, receive",
+    "index": 212,
+    "sentence": "Natascha bekommt ein Fahrrad zu ihrem Geburtstag. – Natascha is getting a bike for her birthday. "
+  },
+  {
+    "word": "meinen",
+    "type": "verb",
+    "trad": "to think, have an opinion",
+    "index": 213,
+    "sentence": "Was meinen Sie dazu? – What do you think? "
+  },
+  {
+    "word": "davon",
+    "type": "pron",
+    "trad": "from it, about it, thereof",
+    "index": 214,
+    "sentence": "Davon wissen wir nichts. – We don’t know anything about that. "
+  },
+  {
+    "word": "fahren",
+    "type": "verb",
+    "trad": "to drive, ride, go",
+    "index": 215,
+    "sentence": "Christine fährt mit dem Zug nach Amsterdam. – Christine’s taking the train to Amsterdam. "
+  },
+  {
+    "word": "kennen",
+    "type": "verb",
+    "trad": "to know",
+    "index": 216,
+    "sentence": "Wir kennen uns schon lange. – We’ve known each other for a long time. "
+  },
+  {
+    "word": "dich",
+    "type": "pron",
+    "trad": "you, yourself",
+    "index": 217,
+    "sentence": "Ich hole dich gleich ab. – I’ll pick you up in a moment. "
+  },
+  {
+    "word": "Mutter",
+    "type": "die",
+    "trad": "mother",
+    "index": 218,
+    "sentence": "Meine Mutter ist eine starke Frau. – My mother is a strong woman. "
+  },
+  {
+    "word": "Woche",
+    "type": "die",
+    "trad": "week",
+    "index": 219,
+    "sentence": "Eine Woche hat sieben Tage. – A week has seven days. "
+  },
+  {
+    "word": "Weg",
+    "type": "der",
+    "trad": "path, way",
+    "index": 220,
+    "sentence": "Der Weg entlang des Flusses ist sehr schön. "
+  },
+  {
+    "word": "weiter",
+    "type": "adv",
+    "trad": "further",
+    "index": 221,
+    "sentence": "Weitere Informationen zu diesem Thema stehen im Internet. – Further information on this topic is available on the internet. "
+  },
+  {
+    "word": "Auge",
+    "type": "das",
+    "trad": "eye",
+    "index": 222,
+    "sentence": "Er hat schöne blaue Augen. – He has beautiful blue eyes. "
+  },
+  {
+    "word": "oft",
+    "type": "adv",
+    "trad": "often",
+    "index": 223,
+    "sentence": "Sie besucht ihre Oma oft. – She visits her grandma often. "
+  },
+  {
+    "word": "Leute",
+    "type": "die",
+    "trad": "(pl) people",
+    "index": 224,
+    "sentence": "Ich treffe auf der Party viele nette Leute. – I meet a lot of nice people at the party. "
+  },
+  {
+    "word": "allerdings",
+    "type": "adv",
+    "trad": "though, indeed, certainly",
+    "index": 225,
+    "sentence": "Das ist allerdings eine interessante Frage. – That is certainly an interesting question. "
+  },
+  {
+    "word": "sogar",
+    "type": "adv",
+    "trad": "even, in fact",
+    "index": 226,
+    "sentence": "Sogar du kannst die Welt ein bisschen verbessern! – Even you can make the world a little better! "
+  },
+  {
+    "word": "jedoch",
+    "type": "adv",
+    "trad": "however",
+    "index": 227,
+    "sentence": "Mütter haben viel Kraft, können jedoch nicht alles allein schaffen. – Mothers have a lot of strength; however, they can’t do everything on their own. "
+  },
+  {
+    "word": "setzen",
+    "type": "",
+    "trad": "",
+    "index": 228,
+    "numbered": [
+      {
+        "index": "1",
+        "type": "verb",
+        "trad": "to set, place, put",
+        "sentence": "Er setzt das Kind auf den Stuhl. – He puts the child in the chair. "
+      },
+      {
+        "index": "2",
+        "type": "verb",
+        "trad": "to sit down",
+        "sentence": "Bitte setzen Sie sich. – Please sit down. "
+      }
+    ]
+  },
+  {
+    "word": "deshalb",
+    "type": "adv",
+    "trad": "therefore",
+    "index": 229,
+    "sentence": "Es gibt bald Regen, deshalb sollten wir ins Haus gehen. – It’s going to rain; therefore, we should go into the house. "
+  },
+  {
+    "word": "weit",
+    "type": "adj",
+    "trad": "widely, far",
+    "index": 230,
+    "sentence": "Ich möchte später weit weg ziehen. – Someday I want to move somewhere far away. "
+  },
+  {
+    "word": "sitzen",
+    "type": "verb",
+    "trad": "to sit",
+    "index": 231,
+    "sentence": "Auf dem Boden sitzt ein schwarzer Hund. – There’s a black dog sitting on the floor. "
+  },
+  {
+    "word": "Vater",
+    "type": "der",
+    "trad": "father",
+    "index": 232,
+    "sentence": "Weil seine Freundin ein Baby bekommt, wird Timo endlich Vater. – Because his girlfriend is having a baby, Timo is finally becoming a father. "
+  },
+  {
+    "word": "dein",
+    "type": "pron",
+    "trad": "your",
+    "index": 233,
+    "sentence": "Dein Handy klingelt. – Your cell’s ringing. "
+  },
+  {
+    "word": "arbeiten",
+    "type": "verb",
+    "trad": "to work",
+    "index": 234,
+    "sentence": "Marlene arbeitet in einem Krankenhaus. – Marlene works in a hospital. "
+  },
+  {
+    "word": "Geld",
+    "type": "das",
+    "trad": "money",
+    "index": 235,
+    "sentence": "Du gibst viel Geld aus. – You spend a lot of money. "
+  },
+  {
+    "word": "Unternehmen",
+    "type": "das",
+    "trad": "enterprise, company",
+    "index": 236,
+    "sentence": "Ich gründe mein eigenes Unternehmen. – I am starting my own company. "
+  },
+  {
+    "word": "nächste (r, s)",
+    "type": "adj",
+    "trad": "next",
+    "index": 237,
+    "sentence": "Nächste Woche gehen wir schwimmen. – Next week we’re going swimming. "
+  },
+  {
+    "word": "erklären",
+    "type": "verb",
+    "trad": "to explain",
+    "index": 238,
+    "sentence": "Max erklärt mir komplizierte Dinge. – Max explains complicated things to me. "
+  },
+  {
+    "word": "klar",
+    "type": "adj",
+    "trad": "clear",
+    "index": 239,
+    "sentence": "Das Wasser ist sehr klar. – The water is very clear. "
+  },
+  {
+    "word": "Doktor, Dr",
+    "type": "der",
+    "trad": "doctor",
+    "index": 240,
+    "sentence": "Wenn ich Schmerzen habe, gehe ich zu einem Doktor. – Whenever I’m in pain, I go to a doctor. "
+  },
+  {
+    "word": "Paar",
+    "type": "",
+    "trad": "",
+    "index": 241,
+    "numbered": [
+      {
+        "index": "1",
+        "type": "das",
+        "trad": "pair, couple",
+        "sentence": "Zwei Schuhe machen ein Paar. – Two shoes make a pair. "
+      },
+      {
+        "index": "2",
+        "type": "pron",
+        "trad": "a few",
+        "sentence": "Wir brauchen dafür nur ein paar Minuten. – We only need a few minutes for that. "
+      }
+    ]
+  },
+  {
+    "word": "Recht",
+    "type": "",
+    "trad": "",
+    "index": 242,
+    "numbered": [
+      {
+        "index": "1",
+        "type": "das",
+        "trad": "right, law",
+        "sentence": "Menschen haben Rechte. – People have rights. "
+      },
+      {
+        "index": "2",
+        "type": "adj",
+        "trad": "all right",
+        "sentence": "Deine Idee ist mir recht. – I’m fine with your idea. "
+      },
+      {
+        "index": "3",
+        "type": "part",
+        "trad": "rather, quite",
+        "sentence": "Das Zimmer ist recht klein. – The room is quite small. "
+      }
+    ]
+  },
+  {
+    "word": "wegen",
+    "type": "prep",
+    "trad": "because of",
+    "index": 243,
+    "sentence": "Ich mag dich wegen deiner Augen. – I like you because of your eyes. "
+  },
+  {
+    "word": "dir",
+    "type": "pron",
+    "trad": "you",
+    "index": 244,
+    "sentence": "Ich möchte dir ein besonderes Geschenk kaufen, was wünschst du dir? – I want to buy you a special gift, what do you wish for? "
+  },
+  {
+    "word": "Wasser",
+    "type": "das",
+    "trad": "water",
+    "index": 245,
+    "sentence": "Ich trinke nur Wasser. – I only drink water. "
+  },
+  {
+    "word": "bestehen",
+    "type": "verb",
+    "trad": "to exist, insist, pass (an exam)",
+    "index": 246,
+    "sentence": "Hoffentlich besteht Anja die Prüfung. – Hopefully Anja passes the exam. "
+  },
+  {
+    "word": "versuchen",
+    "type": "verb",
+    "trad": "to try, attempt",
+    "index": 247,
+    "sentence": "Ich versuche, die Prüfung zu bestehen. – I’m trying to pass the exam. "
+  },
+  {
+    "word": "Punkt",
+    "type": "der",
+    "trad": "dot, point, period",
+    "index": 248,
+    "sentence": "Am Ende eines Satzes ist ein Punkt. – At the end of a sentence is a period. "
+  },
+  {
+    "word": "Grund",
+    "type": "der",
+    "trad": "reason, basis",
+    "index": 249,
+    "sentence": "Es gibt mehrere Gründe für einen Streit. – There are several reasons for a dispute. "
+  },
+  {
+    "word": "Kopf",
+    "type": "der",
+    "trad": "head",
+    "index": 250,
+    "sentence": "Auf dem Hals befindet sich der Kopf. – On the neck is the head. "
+  },
+  {
+    "word": "beginnen",
+    "type": "verb",
+    "trad": "to begin",
+    "index": 251,
+    "sentence": "Mit der Arbeit beginne ich erst morgen. – I won’t start work until tomorrow. "
+  },
+  {
+    "word": "laufen",
+    "type": "verb",
+    "trad": "to run",
+    "index": 252,
+    "sentence": "Die Zeit läuft uns davon. – We’re running out of time. "
+  },
+  {
+    "word": "Bild",
+    "type": "das",
+    "trad": "picture",
+    "index": 253,
+    "sentence": "Clarita malt gerne Bilder von Blumen. – Clarita likes to paint pictures of flowers. "
+  },
+  {
+    "word": "verschieden",
+    "type": "adj",
+    "trad": "different, diverse",
+    "index": 254,
+    "sentence": "Alle Menschen sind verschieden. – All people are different. "
+  },
+  {
+    "word": "Name",
+    "type": "der",
+    "trad": "name",
+    "index": 255,
+    "sentence": "Mein Name ist Lisa und sie heißt Anika. – My name is Lisa and her name is Anika. "
+  },
+  {
+    "word": "Aufgabe",
+    "type": "die",
+    "trad": "task, assignment, job",
+    "index": 256,
+    "sentence": "Ich löse eine mathematische Aufgabe. – I’m solving a mathematical problem. "
+  },
+  {
+    "word": "schwer",
+    "type": "adj",
+    "trad": "difficult, heavy",
+    "index": 257,
+    "sentence": "Das ist eine schwere Frage. – That’s a tough question. "
+  },
+  {
+    "word": "entsprechen",
+    "type": "verb",
+    "trad": "to correspond",
+    "index": 258,
+    "sentence": "Das entspricht unserer Idee. – This corresponds to our idea. "
+  },
+  {
+    "word": "treffen",
+    "type": "verb",
+    "trad": "to meet",
+    "index": 259,
+    "sentence": "Morgen treffe ich mich mit einigen Freunden. – Tomorrow I’m meeting some friends. "
+  },
+  {
+    "word": "Art",
+    "type": "die",
+    "trad": "type, kind",
+    "index": 260,
+    "sentence": "Es gibt verschiedene Arten von Tieren. – There are different kinds of animals. "
+  },
+  {
+    "word": "wohl",
+    "type": "",
+    "trad": "",
+    "index": 261,
+    "numbered": [
+      {
+        "index": "1",
+        "type": "adv",
+        "trad": "well",
+        "sentence": "Er fühlt sich wohl. – He feels well. "
+      },
+      {
+        "index": "2",
+        "type": "part",
+        "trad": "probably",
+        "sentence": "Es ist wohl besser, wenn er geht. – It’s probably better if he leaves. "
+      }
+    ]
+  },
+  {
+    "word": "Geschichte",
+    "type": "die",
+    "trad": "history, story",
+    "index": 262,
+    "sentence": "Ich lese und schreibe gerne Geschichten. – I like to read and write stories. "
+  },
+  {
+    "word": "erzählen",
+    "type": "verb",
+    "trad": "to tell",
+    "index": 263,
+    "sentence": "Susanne erzählt mir gerne Geschichten. – Susanne likes to tell me stories. "
+  },
+  {
+    "word": "entstehen",
+    "type": "verb",
+    "trad": "to originate, develop",
+    "index": 264,
+    "sentence": "Neben unserem Haus entsteht ein neues Gebäude. – Next to our house a new building is being built. "
+  },
+  {
+    "word": "sicher",
+    "type": "adj",
+    "trad": "safe, secure, certain",
+    "index": 265,
+    "sentence": "Sie machen das Haus sicher. – They make the house safe. "
+  },
+  {
+    "word": "neben",
+    "type": "prep",
+    "trad": "next to, beside",
+    "index": 266,
+    "sentence": "Max steht neben Anja. – Max is standing next to Anja. "
+  },
+  {
+    "word": "allein, alleine",
+    "type": "adv",
+    "trad": "alone",
+    "index": 267,
+    "sentence": "Ohne Freunde ist man allein. – Without friends, you’re alone. "
+  },
+  {
+    "word": "Abbildung, Abb.",
+    "type": "die",
+    "trad": "illustration",
+    "index": 268,
+    "sentence": "Die Abbildung Nummer eins zeigt ein gutes Beispiel. – Figure number one shows a good example. "
+  },
+  {
+    "word": "hinter",
+    "type": "prep",
+    "trad": "behind, in back of",
+    "index": 269,
+    "sentence": "Der Garten ist hinter dem Haus. – The garden is behind the house. "
+  },
+  {
+    "word": "besonders",
+    "type": "adv",
+    "trad": "particularly",
+    "index": 270,
+    "sentence": "spannend. – The game is particularly exciting today. "
+  },
+  {
+    "word": "tragen",
+    "type": "verb",
+    "trad": "to carry, wear",
+    "index": 271,
+    "sentence": "Ich trage eine Hose. – I’m wearing pants. "
+  },
+  {
+    "word": "kaum",
+    "type": "adv",
+    "trad": "hardly",
+    "index": 272,
+    "sentence": "Das Licht ist so hell, ich kann kaum etwas sehen. – The light is so bright I can hardly see anything. "
+  },
+  {
+    "word": "Freund",
+    "type": "der",
+    "trad": "friend",
+    "index": 273,
+    "sentence": "Elsbeth ist eine gute Freundin. – Elsbeth is a good friend. "
+  },
+  {
+    "word": "fünf",
+    "type": "num",
+    "trad": "five",
+    "index": 274,
+    "sentence": "Ich bin in fünf Minuten bei dir. – I’ll be with you in five minutes. "
+  },
+  {
+    "word": "scheinen",
+    "type": "verb",
+    "trad": "to shine, seem, appear",
+    "index": 275,
+    "sentence": "Die Sonne scheint auf die Erde. – The sun shines on the earth. "
+  },
+  {
+    "word": "Stunde",
+    "type": "die",
+    "trad": "hour",
+    "index": 276,
+    "sentence": "Eine Stunde hat 60 Minuten. – An hour has 60 minutes. "
+  },
+  {
+    "word": "aussehen",
+    "type": "verb",
+    "trad": "to appear, look",
+    "index": 277,
+    "sentence": "In meinem Kleid sehe ich schön aus. – I look beautiful in my dress. "
+  },
+  {
+    "word": "gern, gerne",
+    "type": "adv",
+    "trad": "(with a verb) love to",
+    "index": 278,
+    "sentence": "Tom tanzt sehr gern. – Tom loves to dance. "
+  },
+  {
+    "word": "überhaupt",
+    "type": "adv",
+    "trad": "at all, generally",
+    "index": 279,
+    "sentence": "Anja mag Hunde überhaupt nicht. – Anja doesn’t like dogs at all. "
+  },
+  {
+    "word": "bestimmt",
+    "type": "adj",
+    "trad": "special, certain",
+    "index": 280,
+    "sentence": "Ich bin mir sicher, das Bild wird bestimmt gut. – I’m sure that picture will certainly be good. "
+  },
+  {
+    "word": "sowie",
+    "type": "conj",
+    "trad": "as well as, as soon as, plus",
+    "index": 281,
+    "sentence": "Christina mag Männer sowie Frauen. – Christina likes men as well as women. "
+  },
+  {
+    "word": "Professor",
+    "type": "der",
+    "trad": "professor",
+    "index": 282,
+    "sentence": "Ein Professor lehrt an der Universität. – A professor teaches at the university. "
+  },
+  {
+    "word": "darüber, drüber",
+    "type": "pron",
+    "trad": "above it, about it",
+    "index": 283,
+    "sentence": "Darüber müssen wir morgen sprechen. – We’ll have to talk about that tomorrow. "
+  },
+  {
+    "word": "deren",
+    "type": "pron",
+    "trad": "whose",
+    "index": 284,
+    "sentence": "Die Frau, deren Vater krank ist, ist traurig. – The woman whose father is ill is sad. "
+  },
+  {
+    "word": "schaffen",
+    "type": "verb",
+    "trad": "to manage, create",
+    "index": 285,
+    "sentence": "Magdalena schafft ihre Prüfung nicht. – Magdalena won’t manage to pass the exam. "
+  },
+  {
+    "word": "damals",
+    "type": "pron",
+    "trad": "then",
+    "index": 286,
+    "sentence": "Damals verdiente ich mehr Geld. – Back then I was making more money. "
+  },
+  {
+    "word": "erhalten",
+    "type": "verb",
+    "trad": "to receive",
+    "index": 287,
+    "sentence": "Du erhältst morgen ein Geschenk. – You’ll receive a present tomorrow. "
+  },
+  {
+    "word": "lernen",
+    "type": "verb",
+    "trad": "to learn",
+    "index": 288,
+    "sentence": "Wir lernen Deutsch. – We’re learning German. "
+  },
+  {
+    "word": "frei",
+    "type": "adj",
+    "trad": "free",
+    "index": 289,
+    "sentence": "Jeder Mensch sollte frei sein. – Everybody should be free. "
+  },
+  {
+    "word": "Wert",
+    "type": "",
+    "trad": "",
+    "index": 290,
+    "numbered": [
+      {
+        "index": "1",
+        "type": "der",
+        "trad": "value",
+        "sentence": "Du musst den Wert des Geldes kennen. – You must know the value of money. "
+      },
+      {
+        "index": "2",
+        "type": "adj",
+        "trad": "worth",
+        "sentence": "Eine gute Arbeit ist viel wert. – A good job is worth a lot. "
+      }
+    ]
+  },
+  {
+    "word": "beziehungsweise, bzw.",
+    "type": "conj",
+    "trad": "or, respectively",
+    "index": 291,
+    "sentence": "Es ist ihr Traum, beziehungsweise Wunsch, Polizistin zu werden. – It is her dream or desire to become a policewoman. "
+  },
+  {
+    "word": "daran, dran",
+    "type": "pron",
+    "trad": "on it",
+    "index": 292,
+    "sentence": "Daran denke ich jeden Tag. – I think about it every day. "
+  },
+  {
+    "word": "suchen",
+    "type": "verb",
+    "trad": "to search, look for",
+    "index": 293,
+    "sentence": "Lisett sucht einen guten Job. – Lisett’s looking for a good job. "
+  },
+  {
+    "word": "Europa",
+    "type": "das",
+    "trad": "Europe",
+    "index": 294,
+    "sentence": "Deutschland, England und Frankreich sind Länder in Europa. – Germany, England, and France are countries in Europe. "
+  },
+  {
+    "word": "gemeinsam",
+    "type": "adj",
+    "trad": "common, mutual",
+    "index": 295,
+    "sentence": "Die beiden Firmen verfolgen ein gemeinsames Ziel. – The two companies pursue a common goal. "
+  },
+  {
+    "word": "rund",
+    "type": "",
+    "trad": "",
+    "index": 296,
+    "numbered": [
+      {
+        "index": "1",
+        "type": "adj",
+        "trad": "round",
+        "sentence": "Ein Fußball ist rund. – A soccer ball is round. "
+      },
+      {
+        "index": "2",
+        "type": "adv",
+        "trad": "approximately",
+        "sentence": "In Berlin leben rund drei Millionen Menschen. – Approximately three million people live in Berlin. "
+      }
+    ]
+  },
+  {
+    "word": "Zahl",
+    "type": "die",
+    "trad": "number",
+    "index": 297,
+    "sentence": "In der Mathematik braucht man Zahlen. – In mathematics you need numbers. "
+  },
+  {
+    "word": "Thema",
+    "type": "das",
+    "trad": "subject, topic, theme",
+    "index": 298,
+    "sentence": "Die Schüler schreiben eine Prüfung zu einem mathematischen Thema. – The students take an exam on a mathematical topic. "
+  },
+  {
+    "word": "handeln",
+    "type": "verb",
+    "trad": "to deal, trade",
+    "index": 299,
+    "sentence": "Die Geschichte handelt von Tieren. – The story deals with animals. "
+  },
+  {
+    "word": "Buch",
+    "type": "das",
+    "trad": "book",
+    "index": 300,
+    "sentence": "Natasha liest gerade ein gutes Buch. – Natasha is reading a good book. "
+  }
+]
