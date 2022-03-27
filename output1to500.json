@@ -71,6 +71,12 @@
         "type": "pron",
         "trad": "one (of)",
         "sentence": "Eines der Kinder hat sich beim Spielen verletzt. – One of the children was injured while playing. "
+      },
+      {
+        "index": "3",
+        "type": "num",
+        "trad": "one",
+        "sentence": "Ein, zwei, drei. – One, two, three. "
       }
     ]
   },
