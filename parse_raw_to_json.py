@@ -4,11 +4,11 @@ import json
 
 print("Parsing raw text to json")
 
-word_count = 401
+word_count = 701
 
-output_json_filename = f'output{word_count}to{word_count+99}.json'
+output_json_filename = f'json_words\\output{word_count}to{word_count+99}.json'
 
-with io.open(f'{word_count}_to_{word_count+99}_words_raw.txt', mode="r", encoding="utf-8") as f:
+with io.open(f'raw_words\\{word_count}_to_{word_count+99}_words_raw.txt', mode="r", encoding="utf-8") as f:
 
     line_count = 0
 
