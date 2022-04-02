@@ -55,8 +55,7 @@ this.wordcards.game = function(retValue) {
         color: black;
       }
       p {
-        margin-block-start: 0;
-        margin-block-end: 0.5em;
+        margin-block-start: 18px;
       }
       #report {
         width: 100%;
@@ -234,6 +233,7 @@ this.wordcards.game = function(retValue) {
         </div>
         <button id="nextButton" class="play-button">Next</button>
       </div>
+      <full-page></full-page>
     </div>
   `;
 
@@ -241,16 +241,52 @@ this.wordcards.game = function(retValue) {
   var wordId = 0;
   var currentWord = void 0;
   var maxWords = 50;
-  var startWordLoaded = 150;
-  var gameType = "";
+  var startWordLoaded = 0;
+  var gameType = "verb";
 
   var mode = "New Words";
+
+  var allWords = {};
 
   var notTriedWords = new Map();
   var hardWord = new Map();
   var mediumWord = new Map();
   var easyWord = new Map();
   var wordStatus = new Map();
+
+  // Word categorisation
+  var playCategories = ["all", "noun", "verb", "adj", "adv", "part", "prep",
+                        "pron", "conj", "rest"];
+
+  function isMemberCategory(word, category) {
+    var wordType = word["type"];
+    if (wordType === "all") { return true; }
+    if (wordType === category) {
+      return true;
+    } else if (category === "noun" && isWordNoun(word)) {
+      return true;
+    }
+    if (word["numbered"]) {
+      for (const number of word["numbered"]) {
+        if (number["type"] === category) {
+          return true;
+        } else if (category === "noun" && isWordNoun(number)) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  function isWordNoun(word) {
+    var wordType = word["type"];
+    if (wordType.includes("der") ||
+        wordType.includes("die") ||
+        wordType.includes("das")) {
+          return true;
+        }
+    else return false;
+  }
 
   function getRandomKey(collection) {
     let index = Math.floor(Math.random() * collection.size);
@@ -337,6 +373,30 @@ this.wordcards.game = function(retValue) {
             rootThis.evaluateWord("medium"));
           this.$easyButton.addEventListener("click", () =>
             rootThis.evaluateWord("easy"));
+
+          this.shadowRoot.getElementById("settings-button").
+           addEventListener("click", (function(e) {
+             // this will be the settings button here
+             rootThis.showSettingsFullPage();
+           }));
+
+           this.addEventListener("new-game", function() {
+            this.wordsLoaded();
+          });
+        }
+      }, {
+        key: "showSettingsFullPage",
+        value: function () {
+          var fullPageDiv = this.shadowRoot.querySelector("full-page");
+          var s = document.createElement("p");
+          s.setAttribute("id", "settings-title");
+          s.innerHTML = "Settings";
+          fullPageDiv.appendChild(s);
+          var settings = document.createElement("game-settings");
+          settings.setAttribute("page", "");
+          settings.setAttribute("slot", "content");
+          fullPageDiv.appendChild(settings);
+          fullPageDiv.setAttribute("open", "");
         }
       }, {
         key: "getNewWord",
@@ -375,7 +435,8 @@ this.wordcards.game = function(retValue) {
           this.shadowRoot.querySelector("#wordId").innerHTML = "#" + (wordId);
           this.shadowRoot.querySelector("#mode").innerHTML = mode;
           this.shadowRoot.querySelector("#progression").innerHTML =
-            (maxWords - notTriedWords.size) + "/" + maxWords;
+            "Tot: " + notTriedWords.size;
+          console.log(`Not tried words: ${notTriedWords.size}`)
 
           Array.from(this.$reportButtons.children).forEach(function (b) {
             b.classList.remove("new-selection");
@@ -424,8 +485,17 @@ this.wordcards.game = function(retValue) {
       }, {
         key: "wordsLoaded",
         value: function (loadedWordList) {
-          if (!gameType) {
-            for ([index, word] of loadedWordList.entries()) {
+          var index = 0;
+          notTriedWords = new Map();
+          hardWord = new Map();
+          mediumWord = new Map();
+          easyWord = new Map();
+          wordStatus = new Map();
+          if (loadedWordList) {
+            allWords = loadedWordList;
+          }
+          if (gameType === "all") {
+            for ([index, word] of allWords.entries()) {
               if (index < startWordLoaded) {
                 continue;
               } else if (index < startWordLoaded + maxWords) {
@@ -435,19 +505,20 @@ this.wordcards.game = function(retValue) {
               }
             }
           } else {
-            for ([index, word] of loadedWordList.entries()) {
-              if (word["type"] === gameType) {
+            for ([index, word] of allWords.entries()) {
+              if (notTriedWords.size >= maxWords) { break; }
+              if (isMemberCategory(word, gameType)) {
                 notTriedWords.set(word["index"], word);
               }
               if (word["numbered"]) {
                 for (const number of word["numbered"]) {
-                  if (number["type"] === gameType) {
+                  if (isMemberCategory(word, gameType)) {
                     notTriedWords.set(word["index"], word);
                   }
                 }
               }
             }
-            maxWords = notTriedWords.size;
+            // maxWords = notTriedWords.size;
           }
           this.getNewWord();
         }
@@ -500,11 +571,346 @@ this.wordcards.game = function(retValue) {
 
   customElements.define("word-cards", wordcardsRoot);
 
+  // Settings page content
+  var settingsElement = document.createElement("template");
+  settingsElement.innerHTML = `
+    <style>
+      .setting {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #d4d5d9;
+        padding: 16px 0;
+      }
+      .text {
+        padding-right: 8px;
+        flex-grow: 1;
+      }
+      section {
+        padding: 0 1em 0;
+      }
+      .title {
+        font-size: 24px;
+      }
+      .description {
+        font-size: 16px;
+        color: #777b7d;
+        margin-top: 12px;
+      }
+      #footnote {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 16px;
+        color: #787c7e;
+        font-size: 12px;
+        text-align: right;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      a, a:visited {
+        color: #787c7e;
+      }
+      button {
+        border-radius: 10px;
+        border: 0;
+        background-color: #DDD;
+        -webkit-appearance: none;
+      }
+      .setting-line {
+        display: flex;
+        margin-top: 1em;
+      }
+      .setting-item {
+        flex-grow: 1;
+        padding: 1em 0 1em;
+        margin: 0 1em 0;
+      }
+      .selected {
+        background-color: LightSkyBlue;
+      }
+    </style>
+
+    <section id="best-results-container">
+    </section>
+
+    <section style="">
+      <div class="setting" >
+        <div class="text">
+          <div class="title">Word type</div>
+          <div class="description">What type of word do you want to practice?</div>
+          <div class="setting-line">
+            <button class="setting-item" id="all">All</button>
+            <button class="setting-item" id="noun">Nouns</button>
+            <button class="setting-item" id="verb">Verbs</button>
+            <button class="setting-item" id="adj">Adjectives</button>
+          </div>
+          <div class="setting-line">
+            <button class="setting-item" id="adv">Adverbs</button>
+            <button class="setting-item" id="part">Particules</button>
+            <button class="setting-item" id="prep">Prepositions</button>
+          </div>
+          <div class="setting-line">
+            <button class="setting-item" id="pron">Pronouns</button>
+            <button class="setting-item" id="conj">Conjunctions</button>
+            <button class="setting-item" id="rest">Rest</button>
+          </div>
+        </div>
+      </div>
+      <div class="setting">
+        <div class="text">
+          <div class="title">Size</div>
+          <div class="description">How many words per game ?</div>
+          <div class="setting-line">
+            <button class="setting-item" id="w50">50</button>
+            <button class="setting-item" id="w100">100</button>
+            <button class="setting-item" id="w200">200</button>
+            <button class="setting-item" id="w500">500</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="margin-bottom: 16px;">
+      <div class="setting">
+        <div class="text">
+          <div class="title">More ?</div>
+        </div>
+        <div class="control"><a href="./">Link</a></div>
+      </div>
+    </section>
+
+    <div id="footnote">
+      <div>© Kragstein.ch 2022</div>
+      <div id="puzzle-number">#0</div>
+    </div>
+  `;
+  var settings = function(htmlElement) {
+  setPrototype(returnFunction, htmlElement);
+  var element = constructElement(returnFunction);
+
+  function returnFunction() {
+    var e;
+    isInstanceOf(this, returnFunction);
+    (e = element.call(this)).attachShadow({ mode: "open" });
+    return e;
+  }
+
+  addKeyFunction(returnFunction , [{
+    key: "connectedCallback",
+    value: function() {
+      var lThis = this;
+      this.shadowRoot.appendChild(settingsElement.content.cloneNode(!0));
+
+      var settingsButtons = this.shadowRoot.querySelectorAll("button");
+
+      settingsButtons.forEach(function(button, i) {
+        button.addEventListener("click", function () {
+          var b = this;
+          var count = b.id.substring(1);
+          // console.log(`Button: ${b.id}`);
+          if (parseInt(count, 10)) {
+            maxWords = parseInt(count, 10);
+            console.log(`maxWords: ${maxWords}`);
+          } else {
+            gameType = b.id;
+            console.log(`GameType: ${gameType}`);
+          }
+          // if (OPERATTIONS.includes(b.id)) {
+          //   currentSettings.operator = b.id;
+          // } else if (SIZES.includes(b.id)) {
+          //   currentSettings.sizeOperand = b.id;
+          // }
+          lThis.render();
+        });
+      });
+      this.render();
+    }
+  }, {
+    key: "disconnectedCallback",
+    value: function () {
+      this.dispatchEvent(new CustomEvent("new-game",
+        { bubbles: !0, composed: !0 }));
+    }
+  }, {
+    key: "render",
+    value: function () {
+      var settingsButtons = this.shadowRoot.querySelectorAll("button");
+        settingsButtons.forEach((item, i) => {
+          item.classList.remove("selected");
+        });
+
+        if (gameType) {
+          var gameTypeDiv = this.shadowRoot.querySelector(
+            "#" + gameType);
+          gameTypeDiv.classList.add("selected");
+        }
+
+        var maxWordsDiv = this.shadowRoot.querySelector(
+          "#w" + maxWords);
+        maxWordsDiv.classList.add("selected");
+
+        // this.dispatchEvent(new CustomEvent("new-game",
+        //   { bubbles: !0, composed: !0 }));
+      }
+  }]);
+
+    return returnFunction;
+  }(SomethingElement(HTMLElement));
+  customElements.define("game-settings", settings);
+
+  // Full page menu
+  var fullPageElement = document.createElement("template");
+    fullPageElement.innerHTML = `
+	<style>
+		.overlay {
+			display: none;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			justify-content: center;
+			background-color: white;
+			animation: SlideIn 100ms linear;
+			z-index: 2000;
+		}
+		:host([open]) .overlay {
+			display: flex;
+		}
+		.content {
+			position: relative;
+			color: black;
+			padding: 0 32px;
+			max-width: var(--game-max-width);
+			width: 100%;
+			overflow-y: auto;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+		.content-container {
+			height: 100%;
+		}
+		.overlay.closing {
+			animation: SlideOut 150ms linear;
+		}
+		header {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		h1 {
+			font-weight: 700;
+			font-size: 16px;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		game-icon {
+			position: absolute;
+			right: 0;
+      top: 10px;
+			user-select: none;
+			cursor: pointer;
+		}
+		@media only screen and (min-device-width : 320px)
+                       and (max-device-width : 480px) {
+			.content {
+				max-width: 100%;
+				padding: 0;
+			}
+			game-icon {
+				padding: 0 16px;
+			}
+		}
+		@keyframes SlideIn {
+			0% {
+				transform: translateY(30px);
+				opacity: 0;
+			}
+			100% {
+				transform: translateY(0px);
+				opacity: 1;
+			}
+		}
+		@keyframes SlideOut {
+			0% {
+				transform: translateY(0px);
+				opacity: 1;
+			}
+			90% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 0;
+				transform: translateY(60px);
+			}
+		}
+	</style>
+	<div class="overlay">
+		<div class="content">
+			<header>
+				<h1><slot></slot></h1>
+				<game-icon icon="close"></game-icon>
+			</header>
+			<div class="content-container">
+				<slot name="content"></slot>
+			</div>
+		</div>
+	</div>`;
+
+  var fullPage = function(htmlElement) {
+
+    setPrototype(returnFunction, htmlElement);
+    var element = constructElement(returnFunction);
+
+    function returnFunction() {
+      var e;
+      isInstanceOf(this, returnFunction);
+      (e = element.call(this)).attachShadow({ mode: "open" });
+      return e;
+    }
+
+    addKeyFunction(returnFunction, [{
+      key: "connectedCallback",
+      value: function() {
+        var e = this;
+        this.shadowRoot.appendChild(fullPageElement.content.cloneNode(!0));
+				this.shadowRoot.querySelector("game-icon").addEventListener("click",
+          function(a) {
+            e.shadowRoot.querySelector(".overlay").classList.add("closing");
+          });
+        this.shadowRoot.addEventListener("animationend",
+          function(a) {
+            if ("SlideOut" === a.animationName) {
+              e.shadowRoot.querySelector(".overlay").classList.remove("closing");
+              Array.from(e.childNodes).forEach((function(a) {
+                e.removeChild(a);
+              }));
+              e.removeAttribute("open");
+              this.dispatchEvent(new CustomEvent("new-game", {
+                bubbles: !0, // bubbles up the DOM tree, to be catched
+                composed: !0, // propagates across the shadow DOM to regular DOM
+              }));
+            }
+          });
+        }
+      }
+    ]);
+    return returnFunction;
+  }(SomethingElement(HTMLElement));
+  customElements.define("full-page", fullPage);
+
   // Icons
 
   // icons
   var iconSizes = {
     settings: "0 0 45 45",
+    close: "0 0 22 22",
   };
   var iconPaths = {
     settings: `
@@ -528,8 +934,11 @@ this.wordcards.game = function(retValue) {
     2.08-4.943h2.438c1.383,0,2.52-1.087,2.52-2.471v-4.125C45.973,19.555,
     44.837,18.443,43.454,18.443z M22.976,30.85c-4.378,0-7.928-3.517-7.928
     -7.852c0-4.338,3.55-7.85,7.928-7.85c4.379,0,7.931,3.512,7.931,7.85
-    C30.906,27.334,27.355,30.85,22.976,30.85z
-    `,
+    C30.906,27.334,27.355,30.85,22.976,30.85z`,
+    close: `
+    M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42
+    1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3
+    a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z`,
   };
 
   var iconElement = document.createElement("template");
