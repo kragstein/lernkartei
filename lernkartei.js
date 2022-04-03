@@ -398,6 +398,28 @@ this.wordcards.game = function(retValue) {
            this.addEventListener("new-game", function() {
             this.wordsLoaded();
           });
+          window.addEventListener("keydown", (function(a) {
+            if (!0 !== a.repeat) {
+              switch(a.key) {
+                case "n":
+                  rootThis.hideSolution();
+                  rootThis.getNewWord();
+                  break;
+                case "e":
+                  rootThis.evaluateWord("easy")
+                  break;
+                case "m":
+                  rootThis.evaluateWord("medium");
+                  break;
+                case "h":
+                  rootThis.evaluateWord("hard");
+                  break;
+                case "s":
+                  rootThis.$wordBoard.dataset.animation = "flip-in";
+                  break;
+             }
+           }
+         }));
         }
       }, {
         key: "showSettingsFullPage",
