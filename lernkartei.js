@@ -56,7 +56,11 @@ this.wordcards.game = function(retValue) {
         color: black;
       }
       p {
-        margin-block-start: 18px;
+        margin-block-start: 0.3em;
+        margin-block-end: 0.3em;
+      }
+      #tradWord {
+        margin-block-end: 1em;
       }
       #report {
         width: 100%;
@@ -81,7 +85,6 @@ this.wordcards.game = function(retValue) {
         background-color: #F2EECB;
         margin: 30px 0;
         border-radius: 20px;
-        line-height: 1em;
       }
       #numbered {
         width: 95%;
@@ -89,29 +92,29 @@ this.wordcards.game = function(retValue) {
       .words {
         font-size: 30px;
         font-weight: bold;
-        margin-block-start: 1.3em;
-      }
-      .wordType {
-        font-size: 30px;
-        font-style: italic;
-        color: darkgrey;
+        text-align: center;
       }
       .sentence {
         font-size: large;
         padding: 0 5%;
+        text-align: center;
       }
       .word-type {
-        color: darkgrey;
+        color: #333;
         font-style: italic;
+        font-size: 22px;
+        font-style: italic;
+        color: darkgrey;
+        text-align: center;
       }
 
       @media (max-height: 600px) {
         #wordBoard {
-          line-height: 2em;
+
         }
         .words {
           font-size: normal;
-          margin-block-start: 0em;
+
         }
         .wordType {
           font-size: normal;
@@ -130,8 +133,7 @@ this.wordcards.game = function(retValue) {
             font-size: 18px;
         }
         p {
-          margin-block-start: 0em;
-          margin-block-end: 0em;
+
         }
       }
       .tile[data-animation='flip-in'] {
@@ -187,11 +189,17 @@ this.wordcards.game = function(retValue) {
       background-color: deepskyblue;
     }
     button.icon {
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 0 4px;
-      }
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0 4px;
+    }
+    .hidden {
+      display: none;
+    }
+    .shown {
+      display: inline-block;
+    }
     </style>
     <header>
       <div></div>
@@ -436,9 +444,9 @@ this.wordcards.game = function(retValue) {
       }, {
         key: "setNewWord",
         value: function () {
+          this.hideSolution();
           this.shadowRoot.querySelector("#guessWord").innerHTML = currentWord["word"];
-          this.shadowRoot.querySelector("#sentence").innerHTML = "";
-          this.shadowRoot.querySelector("#tradSentence").innerHTML = "";
+
           this.shadowRoot.querySelector("#wordId").innerHTML = "#" + (wordId);
           this.shadowRoot.querySelector("#mode").innerHTML = mode;
           this.shadowRoot.querySelector("#progression").innerHTML =
@@ -530,20 +538,42 @@ this.wordcards.game = function(retValue) {
           this.getNewWord();
         }
       }, {
+        key: "showDiv",
+        value: function(selector, isShown) {
+          if (isShown) {
+            this.shadowRoot.querySelector(selector).classList.add("shown");
+            this.shadowRoot.querySelector(selector).classList.remove("hidden");
+          } else {
+            this.shadowRoot.querySelector(selector).classList.add("hidden");
+            this.shadowRoot.querySelector(selector).classList.remove("shown");
+          }
+        }
+      }, {
         key: "showSolution",
         value: function() {
           // var wordDict = wordList[wordId];
           // var wordDict = notTriedWords.get(wordId);
           if (currentWord["trad"]) {
             this.shadowRoot.querySelector("#tradWord").innerHTML = currentWord["trad"];
+            this.showDiv("#tradWord", true);
+          } else {
+            this.showDiv("#tradWord", false);
           }
           if (currentWord["type"]) {
             this.shadowRoot.querySelector("#wordType").innerHTML = currentWord["type"];
+            this.showDiv("#wordType", true);
+          } else {
+            this.showDiv("#wordType", false);
           }
           if (currentWord["sentence"]) {
             var sentenceHTML = currentWord["sentence"].split("–");
             this.shadowRoot.querySelector("#sentence").innerHTML = sentenceHTML[0];
             this.shadowRoot.querySelector("#tradSentence").innerHTML = sentenceHTML[1];
+            this.showDiv("#sentence", true);
+            this.showDiv("#tradSentence", true);
+          } else {
+            this.showDiv("#sentence", false);
+            this.showDiv("#tradSentence", false);
           }
           if (currentWord["numbered"]) {
             for (const [i, v] of currentWord["numbered"].entries()) {
