@@ -343,8 +343,8 @@ this.wordcards.game = function(retValue) {
           this.$nextButton = this.shadowRoot.querySelector("#nextButton");
           this.$reportButtons = this.shadowRoot.querySelector("#report");
 
-          // fetch("./output1to1000.json")
-          fetch("./output1to1500.json")
+
+          fetch("./words_json/1to1500.json")
             .then(response => { return response.json(); })
             .then(responseJSON => {
               this.wordsLoaded(responseJSON);

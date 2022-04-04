@@ -4,7 +4,7 @@ import json
 
 print("Parsing raw text to json")
 
-word_count = 701
+word_count = 1401
 
 output_json_filename = f'json_words\\output{word_count}to{word_count+99}.json'
 
