@@ -109,9 +109,6 @@ this.wordcards.game = function(retValue) {
       }
 
       @media (max-height: 600px) {
-        #wordBoard {
-
-        }
         .words {
           font-size: normal;
 
@@ -122,7 +119,7 @@ this.wordcards.game = function(retValue) {
         .sentence {
           font-size: normal;
         }
-        button {
+        button.play-button {
           line-height: normal;
           padding-top: 1rem;
           padding-bottom: 1rem;
@@ -966,9 +963,9 @@ this.wordcards.game = function(retValue) {
 
   // icons
   var iconSizes = {
-    settings: "0 0 45 45",
+    settings: "0 0 48 46",
     close: "0 0 22 22",
-    cards: "0 0 350 350",
+    cards: "0 0 350 355",
   };
   var iconPaths = {
     settings: `
