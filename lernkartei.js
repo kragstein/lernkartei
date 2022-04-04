@@ -1,7 +1,7 @@
-this.wordcards = this.wordcards || {};
+this.lernkartei = this.lernkartei || {};
 
-this.wordcards.game = function(retValue) {
-  console.log("Welcome to WordCards!");
+this.lernkartei.game = function(retValue) {
+  console.log("Willkommen bei meiner Lernkartei!");
 
   var wordcardsRootElement = document.createElement("template");
   wordcardsRootElement.innerHTML = `
