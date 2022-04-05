@@ -43,7 +43,6 @@ this.lernkartei.game = function(retValue) {
   			display: flex;
   			flex-direction: column;
         -webkit-appearance: none;
-
   		}
       .play-button {
         padding-top: 1rem;
@@ -741,7 +740,7 @@ this.lernkartei.game = function(retValue) {
     </section>
 
     <div id="footnote">
-      <div>© Lenrkartei.Kragstein.ch 2022</div>
+      <div>Lenrkartei 2022</div>
       <div id="puzzle-number">#0</div>
     </div>
   `;
